@@ -19,6 +19,6 @@ There, she discover a strange yet familiar tower.
 
 ## Built With
 
-*Godot engine
-*Figma
-*Jitter
+* Godot engine
+* Figma
+* Jitter

@@ -1,0 +1,85 @@
+[gd_scene format=3 uid="uid://cvtbpdwq375sk"]
+
+[ext_resource type="Texture2D" uid="uid://dvmmu8t304w4d" path="res://icon.svg" id="1_03iyf"]
+[ext_resource type="Script" uid="uid://cjxu3vlcyc6kr" path="res://scripts/mini_game_3.gd" id="1_tlotq"]
+[ext_resource type="Script" uid="uid://cwu7vdxjak2rn" path="res://scripts/crane.gd" id="2_n04k5"]
+[ext_resource type="PackedScene" uid="uid://ccu1tdc5gf8c3" path="res://scenes/hadiah.tscn" id="2_tlotq"]
+[ext_resource type="PackedScene" uid="uid://7ssim2ltnold" path="res://scenes/button_back_fest.tscn" id="5_1gsul"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n04k5"]
+size = Vector2(117, 133)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_03iyf"]
+size = Vector2(96, 292)
+
+[node name="mini_game3" type="Node2D" unique_id=296021818]
+script = ExtResource("1_tlotq")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=656259059]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1618627242]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="ScoreLabel" type="Label" parent="CanvasLayer" unique_id=572037014]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="StatusLabel" type="Label" parent="CanvasLayer" unique_id=199383243]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Crane" type="CharacterBody2D" parent="CanvasLayer" unique_id=1616925651]
+script = ExtResource("2_n04k5")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Crane" unique_id=2105362406]
+position = Vector2(562, 144)
+scale = Vector2(0.7421875, 2.9765625)
+texture = ExtResource("1_03iyf")
+
+[node name="Marker2D" type="Marker2D" parent="CanvasLayer/Crane" unique_id=1809858679]
+position = Vector2(561, 259)
+
+[node name="Area2D" type="Area2D" parent="CanvasLayer/Crane" unique_id=797208008]
+position = Vector2(559, 138)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/Crane/Area2D" unique_id=197639090]
+position = Vector2(3, 155)
+shape = SubResource("RectangleShape2D_n04k5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/Crane" unique_id=1574630411]
+position = Vector2(561, 100)
+shape = SubResource("RectangleShape2D_03iyf")
+
+[node name="TempatHadiah" type="Node2D" parent="CanvasLayer" unique_id=1460720107]
+
+[node name="Hadiah" parent="CanvasLayer/TempatHadiah" unique_id=1336358061 instance=ExtResource("2_tlotq")]
+position = Vector2(401, 475)
+
+[node name="Hadiah2" parent="CanvasLayer/TempatHadiah" unique_id=1803947220 instance=ExtResource("2_tlotq")]
+position = Vector2(580, 473)
+
+[node name="Hadiah3" parent="CanvasLayer/TempatHadiah" unique_id=159188104 instance=ExtResource("2_tlotq")]
+position = Vector2(757, 465)
+
+[node name="Hadiah4" parent="CanvasLayer/TempatHadiah" unique_id=1466630219 instance=ExtResource("2_tlotq")]
+position = Vector2(315, 551)
+
+[node name="Hadiah5" parent="CanvasLayer/TempatHadiah" unique_id=123147548 instance=ExtResource("2_tlotq")]
+position = Vector2(504, 549)
+
+[node name="Hadiah6" parent="CanvasLayer/TempatHadiah" unique_id=123062276 instance=ExtResource("2_tlotq")]
+position = Vector2(699, 553)
+
+[node name="Hadiah7" parent="CanvasLayer/TempatHadiah" unique_id=1464573382 instance=ExtResource("2_tlotq")]
+position = Vector2(886, 559)
+
+[node name="ButtonBack2" parent="CanvasLayer" unique_id=1296299237 instance=ExtResource("5_1gsul")]
+offset_left = -46.0
+offset_top = -12.0
+offset_right = -885.0
+offset_bottom = -545.0

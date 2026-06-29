@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://br832t02pdrp7"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_rgldc"]
+friction = 0.1
+bounce = 0.3
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rgldc"]
+size = Vector2(70, 85)
+
+[node name="Kaleng2D" type="RigidBody2D" unique_id=6798138]
+mass = 0.2
+physics_material_override = SubResource("PhysicsMaterial_rgldc")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=173883713]
+offset_right = 72.0
+offset_bottom = 87.0
+color = Color(0.84606063, 0.59847385, 0.39175895, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2077765191]
+position = Vector2(36, 42.5)
+shape = SubResource("RectangleShape2D_rgldc")

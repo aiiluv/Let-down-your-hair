@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://ctflm6sb4jtvq"]
+
+[ext_resource type="Script" uid="uid://bb7p3nie4k288" path="res://scripts/kanvas.gd" id="1_guyb3"]
+[ext_resource type="Script" uid="uid://hqia5lqoq5hn" path="res://scripts/painting_game.gd" id="1_y66yc"]
+[ext_resource type="Texture2D" uid="uid://dvmmu8t304w4d" path="res://icon.svg" id="3_hiv8t"]
+[ext_resource type="PackedScene" uid="uid://k0d5q247i4k3" path="res://scenes/button_back_tower.tscn" id="4_rj5gk"]
+
+[node name="paintingGame" type="Node2D" unique_id=311082332]
+script = ExtResource("1_y66yc")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=336028363]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1686690477]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Kanvas" type="Node2D" parent="CanvasLayer/TextureRect" unique_id=1998628452]
+script = ExtResource("1_guyb3")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="CanvasLayer/TextureRect/Kanvas" unique_id=1313640081]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/TextureRect/Kanvas/CanvasLayer" unique_id=687002871]
+offset_left = 562.0
+offset_top = 488.0
+offset_right = 1122.0
+offset_bottom = 624.0
+
+[node name="ButtonClear" type="Button" parent="CanvasLayer/TextureRect/Kanvas/CanvasLayer/HBoxContainer" unique_id=1954334717]
+unique_name_in_owner = true
+layout_mode = 2
+icon = ExtResource("3_hiv8t")
+
+[node name="SliderUkuran" type="VSlider" parent="CanvasLayer/TextureRect/Kanvas/CanvasLayer/HBoxContainer" unique_id=497459849]
+unique_name_in_owner = true
+layout_mode = 2
+min_value = 2.0
+max_value = 50.0
+value = 5.0
+
+[node name="ColorPickerButton" type="ColorPickerButton" parent="CanvasLayer/TextureRect/Kanvas/CanvasLayer/HBoxContainer" unique_id=128031523]
+unique_name_in_owner = true
+layout_mode = 2
+icon = ExtResource("3_hiv8t")
+
+[node name="PilihBentuk" type="OptionButton" parent="CanvasLayer/TextureRect/Kanvas/CanvasLayer/HBoxContainer" unique_id=1948554101]
+unique_name_in_owner = true
+layout_mode = 2
+selected = 0
+item_count = 4
+popup/item_0/text = "Kuas"
+popup/item_0/id = 0
+popup/item_1/text = "Garis"
+popup/item_1/id = 1
+popup/item_2/text = "Kotak"
+popup/item_2/id = 3
+popup/item_3/text = "Lingkaran"
+popup/item_3/id = 4
+
+[node name="Fill" type="Button" parent="CanvasLayer/TextureRect/Kanvas/CanvasLayer/HBoxContainer" unique_id=1763560290]
+unique_name_in_owner = true
+layout_mode = 2
+icon = ExtResource("3_hiv8t")
+
+[node name="ButtonBackTower" parent="CanvasLayer" unique_id=1296299237 instance=ExtResource("4_rj5gk")]
+
+[connection signal="pressed" from="CanvasLayer/TextureRect/Kanvas/CanvasLayer/HBoxContainer/ButtonClear" to="." method="_on_button_clear_pressed"]

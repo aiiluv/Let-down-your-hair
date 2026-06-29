@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://dmbmxgkxn7oar"]
+
+[ext_resource type="Texture2D" uid="uid://dvmmu8t304w4d" path="res://icon.svg" id="1_lnngd"]
+[ext_resource type="PackedScene" uid="uid://dnxlm787y8a5h" path="res://scenes/button_back_castle.tscn" id="2_tevrl"]
+
+[node name="books" type="Control" unique_id=880573482]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=983018679]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=614853716]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="closeBook" type="Sprite2D" parent="CanvasLayer/TextureRect" unique_id=1961099133]
+position = Vector2(591, 319.00003)
+scale = Vector2(3.0234375, 4.0234375)
+texture = ExtResource("1_lnngd")
+
+[node name="page1" type="Sprite2D" parent="CanvasLayer/TextureRect" unique_id=1043948564]
+position = Vector2(575, 315)
+scale = Vector2(6.4765625, 4.0625)
+texture = ExtResource("1_lnngd")
+
+[node name="page2" type="Sprite2D" parent="CanvasLayer/TextureRect" unique_id=2104374251]
+position = Vector2(575, 315)
+scale = Vector2(6.4765625, 4.0625)
+texture = ExtResource("1_lnngd")
+
+[node name="page3" type="Sprite2D" parent="CanvasLayer/TextureRect" unique_id=1214415524]
+position = Vector2(575, 315)
+scale = Vector2(6.4765625, 4.0625)
+texture = ExtResource("1_lnngd")
+
+[node name="page4" type="Sprite2D" parent="CanvasLayer/TextureRect" unique_id=848570411]
+position = Vector2(575, 315)
+scale = Vector2(6.4765625, 4.0625)
+texture = ExtResource("1_lnngd")
+
+[node name="ButtonBackCastle" parent="CanvasLayer" unique_id=1296299237 instance=ExtResource("2_tevrl")]

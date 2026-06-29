@@ -1,0 +1,134 @@
+[gd_scene format=3 uid="uid://c4nujkqkxe3bj"]
+
+[ext_resource type="Texture2D" uid="uid://dkwlowacdtyve" path="res://assets/bg/menuScreen.png" id="1_yft84"]
+[ext_resource type="Texture2D" uid="uid://c32nmurbxe2ig" path="res://assets/btn/titleLet.png" id="2_e6vgv"]
+[ext_resource type="Script" uid="uid://3t38r8adq1nw" path="res://scripts/title_let.gd" id="3_amt2q"]
+[ext_resource type="Texture2D" uid="uid://douspg3y4s4o8" path="res://assets/item/semak.png" id="3_ar34o"]
+[ext_resource type="Texture2D" uid="uid://xhikymdkujue" path="res://assets/btn/btnStart.png" id="3_pn7wg"]
+[ext_resource type="Texture2D" uid="uid://bgbj1u6mgn527" path="res://assets/item/semak2.png" id="4_amt2q"]
+[ext_resource type="Texture2D" uid="uid://c8slvt58puu7k" path="res://assets/item/tower.png" id="6_gld7y"]
+[ext_resource type="Script" uid="uid://bab3pmtiuw1fk" path="res://scripts/start_btn.gd" id="7_g2cvw"]
+[ext_resource type="Texture2D" uid="uid://bt2g144rcj2n0" path="res://assets/btn/btnSave.png" id="8_5aq17"]
+[ext_resource type="Script" uid="uid://bhifpncwix61a" path="res://scripts/StartTower.gd" id="8_gld7y"]
+[ext_resource type="Script" uid="uid://cl7yy5u62qdlt" path="res://scripts/save_btn.gd" id="9_5aq17"]
+
+[node name="MenuScreen" type="Node2D" unique_id=675672405]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=427386738]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1051759734]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -17.0
+offset_top = -38.0
+offset_right = 1775.9998
+offset_bottom = 1041.4999
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_yft84")
+
+[node name="TitleLet" type="Button" parent="CanvasLayer/TextureRect" unique_id=833233290]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 427.5
+offset_top = 314.99997
+offset_right = -1662.4998
+offset_bottom = -994.4999
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.5, 1.5)
+icon = ExtResource("2_e6vgv")
+flat = true
+script = ExtResource("3_amt2q")
+
+[node name="semak" type="Button" parent="CanvasLayer/TextureRect" unique_id=1585504199]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2177.5
+offset_top = 85.0
+offset_right = -139.49976
+offset_bottom = -1119.4999
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.2, 1.2)
+icon = ExtResource("3_ar34o")
+flat = true
+
+[node name="semak2" type="Button" parent="CanvasLayer/TextureRect" unique_id=1942751996]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -2.5
+offset_top = 942.5
+offset_right = -2226.6665
+offset_bottom = -13.441284
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.2, 1.2)
+icon = ExtResource("4_amt2q")
+flat = true
+
+[node name="startBtn" type="Button" parent="CanvasLayer/TextureRect" unique_id=1759958512]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 766.0
+offset_top = 1079.5
+offset_right = -1554.9998
+offset_bottom = -509.99988
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.5, 1.5)
+pivot_offset = Vector2(312, 69)
+icon = ExtResource("3_pn7wg")
+flat = true
+script = ExtResource("7_g2cvw")
+
+[node name="SaveBtn" type="Button" parent="CanvasLayer/TextureRect" unique_id=1333321604]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1022.5
+offset_top = 1285.0
+offset_right = -1298.4998
+offset_bottom = -304.49988
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.5, 1.5)
+pivot_offset = Vector2(312, 69)
+icon = ExtResource("8_5aq17")
+flat = true
+script = ExtResource("9_5aq17")
+
+[node name="tower" type="Button" parent="CanvasLayer/TextureRect" unique_id=1827953857]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1970.0
+offset_top = 139.99998
+offset_right = -269.99976
+offset_bottom = 584.5001
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.9, 0.9)
+icon = ExtResource("6_gld7y")
+flat = true
+script = ExtResource("8_gld7y")
+
+[connection signal="mouse_entered" from="CanvasLayer/TextureRect/startBtn" to="CanvasLayer/TextureRect/startBtn" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/TextureRect/startBtn" to="CanvasLayer/TextureRect/startBtn" method="_on_mouse_exited"]
+[connection signal="pressed" from="CanvasLayer/TextureRect/startBtn" to="CanvasLayer/TextureRect/startBtn" method="_on_pressed"]
+[connection signal="mouse_entered" from="CanvasLayer/TextureRect/SaveBtn" to="CanvasLayer/TextureRect/SaveBtn" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/TextureRect/SaveBtn" to="CanvasLayer/TextureRect/SaveBtn" method="_on_mouse_exited"]
+[connection signal="pressed" from="CanvasLayer/TextureRect/SaveBtn" to="CanvasLayer/TextureRect/SaveBtn" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/TextureRect/tower" to="CanvasLayer/TextureRect/tower" method="_on_pressed"]

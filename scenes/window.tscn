@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://rvuo814qfot1"]
+
+[node name="Window" type="Node2D" unique_id=882910373]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=596932316]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=586649904]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2

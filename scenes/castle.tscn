@@ -1,0 +1,121 @@
+[gd_scene format=3 uid="uid://dd84srirpvc5o"]
+
+[ext_resource type="Texture2D" uid="uid://cybpdgrhjd4kv" path="res://assets/bg/InsideCastle.png" id="1_bly62"]
+[ext_resource type="Script" uid="uid://dqc6b7ubit3ea" path="res://scripts/castle.gd" id="1_feow2"]
+[ext_resource type="Texture2D" uid="uid://c7thedtgncb3b" path="res://assets/item/librarybooks.png" id="2_jxdab"]
+[ext_resource type="Texture2D" uid="uid://o7ohyog4ub8w" path="res://assets/item/bedLayla.png" id="3_7pkwf"]
+[ext_resource type="Script" uid="uid://dv3fdnm8cn1jl" path="res://scripts/books.gd" id="3_ha01g"]
+[ext_resource type="Texture2D" uid="uid://j1phi5qv1r31" path="res://assets/item/mapExplore.png" id="4_ha01g"]
+[ext_resource type="Texture2D" uid="uid://bvk8fleyahcqt" path="res://assets/item/mejaLayla.png" id="5_lbl1g"]
+[ext_resource type="Script" uid="uid://vu08ov0f6xro" path="res://scripts/bed.gd" id="5_uplxu"]
+[ext_resource type="Script" uid="uid://c7k2l7l3w6nh0" path="res://scripts/explore.gd" id="7_feow2"]
+[ext_resource type="Script" uid="uid://c8ftt0fish0ix" path="res://scripts/perapian.gd" id="9_uplxu"]
+
+[node name="castle" type="Node2D" unique_id=1295863667]
+script = ExtResource("1_feow2")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1480098499]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=707717941]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_bly62")
+
+[node name="books" type="Button" parent="CanvasLayer/TextureRect" unique_id=159869622]
+layout_mode = 0
+offset_left = 870.0
+offset_top = 125.0
+offset_right = 1084.0
+offset_bottom = 439.0
+icon = ExtResource("2_jxdab")
+flat = true
+script = ExtResource("3_ha01g")
+
+[node name="bed" type="Button" parent="CanvasLayer/TextureRect" unique_id=1457164079]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 191.0
+offset_right = 457.0
+offset_bottom = 563.0
+icon = ExtResource("3_7pkwf")
+flat = true
+script = ExtResource("5_uplxu")
+
+[node name="explore" type="Button" parent="CanvasLayer/TextureRect" unique_id=2074919264]
+layout_mode = 0
+offset_left = 529.0
+offset_top = 407.0
+offset_right = 899.0
+offset_bottom = 529.0
+icon = ExtResource("4_ha01g")
+flat = true
+script = ExtResource("7_feow2")
+
+[node name="perapian" type="Button" parent="CanvasLayer/TextureRect" unique_id=1593336571]
+layout_mode = 0
+offset_left = 432.0
+offset_top = 246.0
+offset_right = 836.0
+offset_bottom = 408.0
+icon = ExtResource("5_lbl1g")
+flat = true
+script = ExtResource("9_uplxu")
+
+[node name="clue" type="ColorRect" parent="CanvasLayer/TextureRect" unique_id=213343045]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -76.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0.2627451)
+
+[node name="Label" type="Label" parent="CanvasLayer/TextureRect/clue" unique_id=612262069]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -20.0
+offset_bottom = 22.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Try to interact with every object"
+horizontal_alignment = 1
+
+[node name="locked" type="ColorRect" parent="CanvasLayer/TextureRect" unique_id=1560206102]
+visible = false
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -76.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0.2627451)
+
+[node name="Label" type="Label" parent="CanvasLayer/TextureRect/locked" unique_id=237385541]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -20.0
+offset_bottom = 22.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "This object is locked"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="CanvasLayer/TextureRect/books" to="." method="_on_books_pressed"]
+[connection signal="pressed" from="CanvasLayer/TextureRect/explore" to="." method="_on_explore_pressed"]

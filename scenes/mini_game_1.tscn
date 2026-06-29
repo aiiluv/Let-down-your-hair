@@ -1,0 +1,95 @@
+[gd_scene format=3 uid="uid://b8ym0vb252lhh"]
+
+[ext_resource type="Script" uid="uid://c803o7dtm3poo" path="res://scripts/mini_game_1.gd" id="1_82qr0"]
+[ext_resource type="PackedScene" uid="uid://bleesajf00myr" path="res://scenes/bola_2d.tscn" id="1_va2jd"]
+[ext_resource type="PackedScene" uid="uid://br832t02pdrp7" path="res://scenes/kaleng_2d.tscn" id="2_82qr0"]
+[ext_resource type="PackedScene" uid="uid://7ssim2ltnold" path="res://scenes/button_back_fest.tscn" id="4_0gacd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mmxvs"]
+size = Vector2(1216, 155.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_va2jd"]
+size = Vector2(1747, 292)
+
+[node name="KalengGame" type="Node2D" unique_id=1783342896]
+script = ExtResource("1_82qr0")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=548281070]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=556227922]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StaticBody2D" type="StaticBody2D" parent="CanvasLayer/TextureRect" unique_id=720765877]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/TextureRect/StaticBody2D" unique_id=1574185318]
+position = Vector2(576, 568.75)
+shape = SubResource("RectangleShape2D_mmxvs")
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/TextureRect" unique_id=1992000568]
+layout_mode = 0
+offset_left = -4.0
+offset_top = 506.0
+offset_right = 1158.0
+offset_bottom = 649.0
+
+[node name="Bola2D" parent="CanvasLayer/TextureRect" unique_id=113336579 instance=ExtResource("1_va2jd")]
+unique_name_in_owner = true
+position = Vector2(220, 251)
+
+[node name="Kaleng2D" parent="CanvasLayer/TextureRect" unique_id=6798138 instance=ExtResource("2_82qr0")]
+position = Vector2(1040, 429)
+
+[node name="Kaleng2D2" parent="CanvasLayer/TextureRect" unique_id=41586962 instance=ExtResource("2_82qr0")]
+position = Vector2(938, 429)
+
+[node name="Kaleng2D3" parent="CanvasLayer/TextureRect" unique_id=470504406 instance=ExtResource("2_82qr0")]
+position = Vector2(835, 429)
+
+[node name="Kaleng2D4" parent="CanvasLayer/TextureRect" unique_id=112181404 instance=ExtResource("2_82qr0")]
+position = Vector2(996, 335)
+
+[node name="Kaleng2D5" parent="CanvasLayer/TextureRect" unique_id=426258748 instance=ExtResource("2_82qr0")]
+position = Vector2(893, 335)
+
+[node name="SliderArah" type="VSlider" parent="CanvasLayer" unique_id=314741223]
+offset_left = 166.0
+offset_top = 248.0
+offset_right = 182.0
+offset_bottom = 356.0
+min_value = -1.0
+max_value = 1.0
+
+[node name="Lempar!" type="Button" parent="CanvasLayer" unique_id=954527274]
+offset_left = 237.0
+offset_top = 378.0
+offset_right = 309.0
+offset_bottom = 409.0
+text = "Lempar!"
+
+[node name="ButtonBack2" parent="CanvasLayer" unique_id=1296299237 instance=ExtResource("4_0gacd")]
+offset_left = -46.0
+offset_top = -12.0
+offset_right = -885.0
+offset_bottom = -545.0
+
+[node name="LantaiBawah" type="Area2D" parent="." unique_id=2070939388]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LantaiBawah" unique_id=736819813]
+position = Vector2(694, 716)
+shape = SubResource("RectangleShape2D_va2jd")
+
+[node name="StatusLabel" type="Label" parent="." unique_id=1438209937]
+unique_name_in_owner = true
+visible = false
+offset_left = 536.0
+offset_top = 238.0
+offset_right = 614.0
+offset_bottom = 261.0
+text = "WIN/LOSE"
+
+[connection signal="pressed" from="CanvasLayer/Lempar!" to="CanvasLayer/TextureRect/Bola2D" method="_on_lempar_pressed"]
+[connection signal="body_entered" from="LantaiBawah" to="." method="_on_lantai_bawah_body_entered"]

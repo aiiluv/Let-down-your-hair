@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://cqaq40ccofndp"]
+
+[ext_resource type="Texture2D" uid="uid://dvmmu8t304w4d" path="res://icon.svg" id="1_ca47o"]
+[ext_resource type="PackedScene" uid="uid://k0d5q247i4k3" path="res://scenes/button_back_tower.tscn" id="2_ugr38"]
+
+[node name="DressUpGame" type="Node2D" unique_id=207122129]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2001524395]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1511932710]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="dress1" type="Sprite2D" parent="CanvasLayer/TextureRect" unique_id=1604820993]
+position = Vector2(588.07996, 357.96)
+scale = Vector2(1.7199998, 2.6399999)
+texture = ExtResource("1_ca47o")
+
+[node name="dress2" type="Sprite2D" parent="CanvasLayer/TextureRect" unique_id=896984432]
+position = Vector2(588.07996, 357.96)
+scale = Vector2(1.7199998, 2.6399999)
+texture = ExtResource("1_ca47o")
+
+[node name="dress3" type="Sprite2D" parent="CanvasLayer/TextureRect" unique_id=799920847]
+position = Vector2(588.07996, 357.96)
+scale = Vector2(1.7199998, 2.6399999)
+texture = ExtResource("1_ca47o")
+
+[node name="dress4" type="Sprite2D" parent="CanvasLayer/TextureRect" unique_id=1309365279]
+position = Vector2(588.07996, 357.96)
+scale = Vector2(1.7199998, 2.6399999)
+texture = ExtResource("1_ca47o")
+
+[node name="hair1" type="Sprite2D" parent="CanvasLayer/TextureRect" unique_id=2066063989]
+position = Vector2(586, 110)
+texture = ExtResource("1_ca47o")
+
+[node name="hair2" type="Sprite2D" parent="CanvasLayer/TextureRect" unique_id=1471080125]
+position = Vector2(586, 110)
+texture = ExtResource("1_ca47o")
+
+[node name="hair3" type="Sprite2D" parent="CanvasLayer/TextureRect" unique_id=241982193]
+position = Vector2(586, 110)
+texture = ExtResource("1_ca47o")
+
+[node name="hair4" type="Sprite2D" parent="CanvasLayer/TextureRect" unique_id=217111260]
+position = Vector2(586, 110)
+texture = ExtResource("1_ca47o")
+
+[node name="accessories1" type="Sprite2D" parent="CanvasLayer/TextureRect" unique_id=393333668]
+position = Vector2(586, 110)
+texture = ExtResource("1_ca47o")
+
+[node name="accessories2" type="Sprite2D" parent="CanvasLayer/TextureRect" unique_id=327715502]
+position = Vector2(586, 110)
+texture = ExtResource("1_ca47o")
+
+[node name="accessories3" type="Sprite2D" parent="CanvasLayer/TextureRect" unique_id=1466454537]
+position = Vector2(586, 110)
+texture = ExtResource("1_ca47o")
+
+[node name="ButtonDress" type="Button" parent="CanvasLayer/TextureRect" unique_id=1141961538]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="ButtonHair" type="Button" parent="CanvasLayer/TextureRect" unique_id=393220969]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="ButtonAccessories" type="Button" parent="CanvasLayer/TextureRect" unique_id=1872924012]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="ButtonBackTower" parent="CanvasLayer" unique_id=1296299237 instance=ExtResource("2_ugr38")]

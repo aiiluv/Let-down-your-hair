@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bleesajf00myr"]
+
+[ext_resource type="Script" uid="uid://b1upuihfj2dcy" path="res://scripts/bola_2d.gd" id="1_1kyvj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dnwxm"]
+size = Vector2(106, 100)
+
+[node name="Bola2D" type="RigidBody2D" unique_id=113336579]
+freeze = true
+script = ExtResource("1_1kyvj")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1914954956]
+offset_right = 109.0
+offset_bottom = 102.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2142978923]
+position = Vector2(54, 50)
+shape = SubResource("RectangleShape2D_dnwxm")

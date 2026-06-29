@@ -1,0 +1,85 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+&"_translation_id": "",
+&"color": Color(1, 1, 1, 1),
+&"custom_info": {
+"prefix": "",
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "",
+"suffix": ""
+},
+&"default_portrait": "default",
+&"description": "",
+&"display_name": "Layla",
+&"mirror": false,
+&"nicknames": [""],
+&"offset": Vector2(-400, 100),
+&"portraits": {
+"confuse": {
+"export_overrides": {
+"image": "\"res://assets/chara/layla oc/layla confuse.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"default": {
+"export_overrides": {
+"image": "\"res://assets/chara/layla oc/Layla normal.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"happy": {
+"export_overrides": {
+"image": "\"res://assets/chara/layla oc/layla happy.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"shock": {
+"export_overrides": {
+"image": "\"res://assets/chara/layla oc/layla shock.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"so happy": {
+"export_overrides": {
+"image": "\"res://assets/chara/layla oc/layla so happy.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"sus": {
+"export_overrides": {
+"image": "\"res://assets/chara/layla oc/layla sus.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"understand": {
+"export_overrides": {
+"image": "\"res://assets/chara/layla oc/layla understand.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
+&"scale": 1.0
+}

@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://drkuhwywtt57f"]
+
+[ext_resource type="Texture2D" uid="uid://cfkwicur5py35" path="res://assets/btn/btnBack.png" id="1_l8mrd"]
+[ext_resource type="Script" uid="uid://dhxi4rdalndde" path="res://scripts/backBtn.gd" id="2_ovk6b"]
+
+[node name="ButtonBackMenu" type="Button" unique_id=1296299237]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -839.0
+offset_bottom = -533.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+pivot_offset = Vector2(156.5, 57.5)
+icon = ExtResource("1_l8mrd")
+flat = true
+script = ExtResource("2_ovk6b")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="pressed" from="." to="." method="_on_pressed"]

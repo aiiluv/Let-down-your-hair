@@ -1,0 +1,32 @@
+sesampainya dipasar, kamu berjalan sembari menyapa semua orang
+memang kedatanganmu adalah suatu hal biasa bagi para warga pasar
+join Layla center
+selamat pagi putri!
+hohoho, lama tidak berjumpa putri, apa kamu sudah menemukan best camp baru?
+putri, apakah kamu ingin mencoba kue pie ini? Traktiranku!
+semua menyambutmu dengan suka cita.
+[clear time="1.0"]
+join Layla center
+Layla: terimakasih banyak! Tapi mungkin lain kali, aku ingin berkeliling terlebih dahulu!
+brak!
+Layla: aduh!
+[clear time="1.0"]
+[background fade="0.0"]
+kamu bertabrakan dengan orang lain
+Layla: yaampun! Maafkan aku, apakah engkau baik - baik saja?
+[background fade="0.0"]
+join "Lily's mother" center
+"Lily's mother": i-iya.. terimakasih
+perasaanmu aneh, sepertinya kamu tidak pernah bertemu dengan perempuan itu
+Layla: apakah kamu musafir? Aku tidak pernah bertemu denganmu
+"Lily's mother": k-kalau begitu.. selamat tinggal!
+Layla: h-hei!
+[clear time="1.0"]
+dia pergi begitu saja..
+[background fade="0.0"]
+join Layla center
+Layla: hmmm, dia kenapa ya? Ah, mungkin dia sedang terburu - buru
+Layla: ah, tunggu.. apa ini?
+Layla: sepertinya ini adalah barang miliknya. Harus aku kembalikan!
+kamu pun berlari mengejar orang itu sampai kehutan
+jump timeline3/

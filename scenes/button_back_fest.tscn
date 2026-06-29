@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://7ssim2ltnold"]
+
+[ext_resource type="Texture2D" uid="uid://cfkwicur5py35" path="res://assets/btn/btnBack.png" id="1_mo62l"]
+[ext_resource type="Script" uid="uid://d1dbak1igriot" path="res://scripts/button_back_fest.gd" id="2_mhyvp"]
+
+[node name="ButtonBackFest" type="Button" unique_id=1296299237]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -839.0
+offset_bottom = -533.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+pivot_offset = Vector2(156.5, 57.5)
+icon = ExtResource("1_mo62l")
+flat = true
+script = ExtResource("2_mhyvp")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="pressed" from="." to="." method="_on_pressed"]

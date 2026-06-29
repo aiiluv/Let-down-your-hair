@@ -1,0 +1,141 @@
+[gd_scene format=3 uid="uid://btqpfeh52p0di"]
+
+[ext_resource type="Script" uid="uid://7toxr1mxkdrw" path="res://scripts/mini_game_2.gd" id="1_5st01"]
+[ext_resource type="Texture2D" uid="uid://dvmmu8t304w4d" path="res://icon.svg" id="1_ly37a"]
+[ext_resource type="Script" uid="uid://bl4oepnvmsd7r" path="res://scripts/barang_1.gd" id="2_d82ek"]
+[ext_resource type="Script" uid="uid://dl3xlapkf3xup" path="res://scripts/barang_2.gd" id="4_ulfne"]
+[ext_resource type="Script" uid="uid://w172o7w8q2dd" path="res://scripts/barang_3.gd" id="5_o5tph"]
+[ext_resource type="Script" uid="uid://c4kg7ccp4ibgc" path="res://scripts/barang_4.gd" id="6_tf6vf"]
+[ext_resource type="PackedScene" uid="uid://csnp1xhjg55nu" path="res://scenes/peluru.tscn" id="7_2ql78"]
+[ext_resource type="PackedScene" uid="uid://7ssim2ltnold" path="res://scenes/button_back_fest.tscn" id="7_i36sg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bcwdp"]
+size = Vector2(762, 462.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5st01"]
+size = Vector2(147, 149.5)
+
+[node name="mini_game2" type="Node2D" unique_id=898529918]
+script = ExtResource("1_5st01")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2081846099]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1971893053]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RakBarang" type="StaticBody2D" parent="CanvasLayer/TextureRect" unique_id=1141056346]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/TextureRect/RakBarang" unique_id=2129811463]
+position = Vector2(606, 320.25)
+shape = SubResource("RectangleShape2D_bcwdp")
+
+[node name="TempatBarang" type="Node2D" parent="CanvasLayer/TextureRect" unique_id=386153003]
+
+[node name="Barang1" type="Area2D" parent="CanvasLayer/TextureRect/TempatBarang" unique_id=703898287]
+position = Vector2(118, 4)
+script = ExtResource("2_d82ek")
+
+[node name="TextureProgressBar" type="ProgressBar" parent="CanvasLayer/TextureRect/TempatBarang/Barang1" unique_id=241354616]
+offset_left = 225.0
+offset_top = 93.0
+offset_right = 425.0
+offset_bottom = 120.0
+value = 100.0
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/TextureRect/TempatBarang/Barang1" unique_id=989360302]
+position = Vector2(335, 195)
+texture = ExtResource("1_ly37a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/TextureRect/TempatBarang/Barang1" unique_id=1688171655]
+position = Vector2(332.5, 192.25)
+shape = SubResource("RectangleShape2D_5st01")
+
+[node name="Barang2" type="Area2D" parent="CanvasLayer/TextureRect/TempatBarang" unique_id=769461546]
+position = Vector2(302, 5)
+script = ExtResource("4_ulfne")
+
+[node name="TextureProgressBar" type="ProgressBar" parent="CanvasLayer/TextureRect/TempatBarang/Barang2" unique_id=1546048751]
+offset_left = 225.0
+offset_top = 93.0
+offset_right = 425.0
+offset_bottom = 120.0
+value = 100.0
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/TextureRect/TempatBarang/Barang2" unique_id=612140315]
+position = Vector2(335, 195)
+texture = ExtResource("1_ly37a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/TextureRect/TempatBarang/Barang2" unique_id=461770950]
+position = Vector2(332.5, 192.25)
+shape = SubResource("RectangleShape2D_5st01")
+
+[node name="Barang3" type="Area2D" parent="CanvasLayer/TextureRect/TempatBarang" unique_id=366572932]
+position = Vector2(186, 193)
+script = ExtResource("5_o5tph")
+
+[node name="TextureProgressBar" type="ProgressBar" parent="CanvasLayer/TextureRect/TempatBarang/Barang3" unique_id=688391182]
+offset_left = 225.0
+offset_top = 93.0
+offset_right = 425.0
+offset_bottom = 120.0
+value = 100.0
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/TextureRect/TempatBarang/Barang3" unique_id=1821897605]
+position = Vector2(335, 195)
+texture = ExtResource("1_ly37a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/TextureRect/TempatBarang/Barang3" unique_id=325613251]
+position = Vector2(332.5, 192.25)
+shape = SubResource("RectangleShape2D_5st01")
+
+[node name="Barang4" type="Area2D" parent="CanvasLayer/TextureRect/TempatBarang" unique_id=1318359135]
+position = Vector2(400, 196)
+script = ExtResource("6_tf6vf")
+
+[node name="TextureProgressBar" type="ProgressBar" parent="CanvasLayer/TextureRect/TempatBarang/Barang4" unique_id=1418039959]
+offset_left = 225.0
+offset_top = 93.0
+offset_right = 425.0
+offset_bottom = 120.0
+value = 100.0
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/TextureRect/TempatBarang/Barang4" unique_id=487127539]
+position = Vector2(335, 195)
+texture = ExtResource("1_ly37a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/TextureRect/TempatBarang/Barang4" unique_id=1873500509]
+position = Vector2(332.5, 192.25)
+shape = SubResource("RectangleShape2D_5st01")
+
+[node name="Pistol" type="Sprite2D" parent="CanvasLayer" unique_id=1765927585]
+position = Vector2(611, 543)
+texture = ExtResource("1_ly37a")
+
+[node name="Marker2D" type="Marker2D" parent="CanvasLayer/Pistol" unique_id=51479250]
+
+[node name="SisaPeluruLabel" type="Label" parent="CanvasLayer" unique_id=944728117]
+offset_left = 26.0
+offset_top = 106.0
+offset_right = 125.0
+offset_bottom = 129.0
+text = "SISA PELURU"
+
+[node name="StatusLabel" type="Label" parent="CanvasLayer" unique_id=362461152]
+offset_left = 29.0
+offset_top = 137.0
+offset_right = 128.0
+offset_bottom = 160.0
+text = "WIN/LOSE"
+
+[node name="ButtonBack2" parent="CanvasLayer" unique_id=1296299237 instance=ExtResource("7_i36sg")]
+offset_left = -46.0
+offset_top = -12.0
+offset_right = -885.0
+offset_bottom = -545.0
+
+[node name="Peluru" parent="." unique_id=861090994 instance=ExtResource("7_2ql78")]
+position = Vector2(607, 542)

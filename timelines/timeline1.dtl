@@ -1,0 +1,18 @@
+[background arg="res://assets/bg/village.png" fade="0.0"]
+Pagi hari yang cerah di kerajaan Pilum, semua orang sibuk berdagang, bekerja, sangat damai dan tentram
+[background arg="res://assets/bg/Castle.png" fade="0.0"]
+begitupun dengan keadaan di Istana
+join Layla (so happy) center
+Layla: Sungguh hari yang cerah!
+Layla: Ini adalah waktu yang tepat untuk berkelana!
+kamu, seorang putri di kerajaan pilum yang sangat menyukai petualangan
+Layla: kira - kira tempat mana lagi yang harus kukunjungi ya?
+- pasar
+	Layla: mungkin pasar adalah pilihan bagus!
+	Layla: sudah lama aku tidak kesana, aku penasaran semua orang sedang sibuk apa!
+	jump timeline2/
+- hutan
+	Layla: hutan pastinya adalah pilihan yang tepat!
+	Layla: pepohonan lebat, angin sejuk, suara gemericik air sungai..
+	Layla: tempat yang pas untuk mencari petualangan baru!
+	jump timeline3/istirahat

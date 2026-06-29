@@ -1,0 +1,103 @@
+[gd_scene format=3 uid="uid://dtwqlnnj8klhn"]
+
+[ext_resource type="Texture2D" uid="uid://dkwlowacdtyve" path="res://assets/bg/menuScreen.png" id="1_0soje"]
+[ext_resource type="PackedScene" uid="uid://drkuhwywtt57f" path="res://scenes/button_back_menu.tscn" id="1_j3o30"]
+[ext_resource type="Texture2D" uid="uid://douspg3y4s4o8" path="res://assets/item/semak.png" id="2_wm0sa"]
+[ext_resource type="Texture2D" uid="uid://bgbj1u6mgn527" path="res://assets/item/semak2.png" id="3_kee33"]
+
+[node name="Chapters" type="Control" unique_id=588443126]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=735801706]
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer" unique_id=656766202]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -5.0000305
+offset_top = -8.000015
+offset_right = 1787.9998
+offset_bottom = 1071.4999
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_0soje")
+
+[node name="save1" type="Button" parent="CanvasLayer/TextureRect2" unique_id=1484013246]
+layout_mode = 0
+offset_left = 322.50006
+offset_top = 417.5
+offset_right = 1010.0
+offset_bottom = 839.99994
+
+[node name="save2" type="Button" parent="CanvasLayer/TextureRect2" unique_id=1320250635]
+layout_mode = 0
+offset_left = 1127.5
+offset_top = 417.5
+offset_right = 1815.0
+offset_bottom = 840.0
+
+[node name="save3" type="Button" parent="CanvasLayer/TextureRect2" unique_id=2122352973]
+layout_mode = 0
+offset_left = 1940.0
+offset_top = 410.0
+offset_right = 2627.5
+offset_bottom = 832.5
+
+[node name="save4" type="Button" parent="CanvasLayer/TextureRect2" unique_id=1099505422]
+layout_mode = 0
+offset_left = 322.50012
+offset_top = 957.5
+offset_right = 1010.0
+offset_bottom = 1380.0
+
+[node name="save5" type="Button" parent="CanvasLayer/TextureRect2" unique_id=27752366]
+layout_mode = 0
+offset_left = 1127.5
+offset_top = 957.5
+offset_right = 1815.0
+offset_bottom = 1380.0
+
+[node name="save6" type="Button" parent="CanvasLayer/TextureRect2" unique_id=1723109235]
+layout_mode = 0
+offset_left = 1940.0
+offset_top = 950.0
+offset_right = 2627.5
+offset_bottom = 1372.5
+
+[node name="semak" type="Button" parent="CanvasLayer/TextureRect2" unique_id=1274228001]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2197.5
+offset_top = -17.499962
+offset_right = -119.499756
+offset_bottom = -1221.9998
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.2, 1.2)
+icon = ExtResource("2_wm0sa")
+flat = true
+
+[node name="semak2" type="Button" parent="CanvasLayer/TextureRect2" unique_id=1309183718]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -2.5
+offset_top = 942.5
+offset_right = -2226.6665
+offset_bottom = -13.441284
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.2, 1.2)
+icon = ExtResource("3_kee33")
+flat = true
+
+[node name="ButtonBack" parent="CanvasLayer" unique_id=1296299237 instance=ExtResource("1_j3o30")]

@@ -1,0 +1,120 @@
+[gd_scene format=3 uid="uid://c4ko2kluo7hbt"]
+
+[ext_resource type="Texture2D" uid="uid://cao3kwmgkark7" path="res://assets/bg/InsideTower.png" id="1_2x682"]
+[ext_resource type="Script" uid="uid://dp8qm557oosec" path="res://scripts/play_tower.gd" id="1_jfguu"]
+[ext_resource type="Texture2D" uid="uid://cu73dbxvd03gh" path="res://assets/item/Closet.png" id="2_ay4al"]
+[ext_resource type="Texture2D" uid="uid://3oduqjvwkjfn" path="res://assets/item/Window.png" id="3_qrbg1"]
+[ext_resource type="Texture2D" uid="uid://d17nwb70xkmm1" path="res://assets/item/Painting.png" id="4_jfguu"]
+[ext_resource type="Script" uid="uid://k6bjlltyrapl" path="res://scripts/Btn_dress_up.gd" id="4_vqps3"]
+[ext_resource type="Script" uid="uid://d1tmj55j67lex" path="res://scripts/btn_window.gd" id="6_qfw7u"]
+[ext_resource type="Script" uid="uid://civimfdft3rd6" path="res://scripts/btn_paint.gd" id="8_p8022"]
+
+[node name="tower" type="Node2D" unique_id=1938250569]
+script = ExtResource("1_jfguu")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1454896279]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1747054862]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 1.0
+offset_right = 777.99976
+offset_bottom = 426.33325
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_2x682")
+
+[node name="dressUp" type="Button" parent="CanvasLayer/TextureRect" unique_id=2132913214]
+layout_mode = 0
+offset_left = 1320.0
+offset_top = 68.33333
+offset_right = 1787.6666
+offset_bottom = 685.99994
+icon = ExtResource("2_ay4al")
+flat = true
+script = ExtResource("4_vqps3")
+
+[node name="Window" type="Button" parent="CanvasLayer/TextureRect" unique_id=2089069430]
+layout_mode = 0
+offset_left = 871.6667
+offset_top = 78.33333
+offset_right = 1061.6667
+offset_bottom = 316.3333
+scale = Vector2(1.5, 1.5)
+icon = ExtResource("3_qrbg1")
+flat = true
+script = ExtResource("6_qfw7u")
+
+[node name="Paint" type="Button" parent="CanvasLayer/TextureRect" unique_id=929219286]
+layout_mode = 0
+offset_left = -6.666666
+offset_top = -43.333332
+offset_right = 637.3333
+offset_bottom = 596.6667
+scale = Vector2(1.2, 1.2)
+icon = ExtResource("4_jfguu")
+flat = true
+script = ExtResource("8_p8022")
+
+[node name="clue" type="ColorRect" parent="CanvasLayer/TextureRect" unique_id=361969867]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -76.0
+offset_bottom = 78.33331
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0.2627451)
+
+[node name="Label" type="Label" parent="CanvasLayer/TextureRect/clue" unique_id=1431554352]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -20.0
+offset_bottom = 22.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Try to kill time with doing some activities
+(interact with some objects here)"
+horizontal_alignment = 1
+
+[node name="windowLocked" type="ColorRect" parent="CanvasLayer/TextureRect" unique_id=1809140944]
+visible = false
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -76.0
+offset_bottom = 78.33331
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0.2627451)
+
+[node name="Label" type="Label" parent="CanvasLayer/TextureRect/windowLocked" unique_id=1151012214]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -20.0
+offset_bottom = 22.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Window locked
+try again after doing some activities"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="CanvasLayer/TextureRect/dressUp" to="." method="_on_dress_up_pressed"]
+[connection signal="pressed" from="CanvasLayer/TextureRect/Window" to="." method="_on_window_pressed"]
+[connection signal="pressed" from="CanvasLayer/TextureRect/Paint" to="." method="_on_paint_pressed"]

@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://eyb1357ird8w"]
+
+[ext_resource type="PackedScene" uid="uid://drkuhwywtt57f" path="res://scenes/button_back_menu.tscn" id="1_hx3vx"]
+
+[node name="About" type="Control" unique_id=1290962201]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1674288195]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=930553139]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Info" type="Sprite2D" parent="CanvasLayer/TextureRect" unique_id=1058971375]
+
+[node name="Character" type="Sprite2D" parent="CanvasLayer/TextureRect" unique_id=539911120]
+
+[node name="ButtonBack" parent="CanvasLayer" unique_id=1296299237 instance=ExtResource("1_hx3vx")]
+offset_left = -30.0
+offset_right = -869.0

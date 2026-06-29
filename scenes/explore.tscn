@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://ba82j7f2d2vfh"]
+
+[ext_resource type="PackedScene" uid="uid://dnxlm787y8a5h" path="res://scenes/button_back_castle.tscn" id="1_x7d0j"]
+
+[node name="Explore" type="Node2D" unique_id=1237344295]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=312722463]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=793911028]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ToTower" type="Button" parent="CanvasLayer/TextureRect" unique_id=606231479]
+layout_mode = 0
+offset_left = 535.0
+offset_top = 87.0
+offset_right = 832.0
+offset_bottom = 219.0
+
+[node name="ToMarket" type="Button" parent="CanvasLayer/TextureRect" unique_id=1207343927]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 242.0
+offset_right = 257.0
+offset_bottom = 451.0
+
+[node name="ToForest" type="Button" parent="CanvasLayer/TextureRect" unique_id=1696568762]
+layout_mode = 0
+offset_left = 316.0
+offset_top = 281.0
+offset_right = 533.0
+offset_bottom = 428.0
+
+[node name="ToRiver" type="Button" parent="CanvasLayer/TextureRect" unique_id=1562463595]
+layout_mode = 0
+offset_left = 835.0
+offset_top = 415.0
+offset_right = 1087.0
+offset_bottom = 543.0
+
+[node name="ButtonBackCastle" parent="CanvasLayer" unique_id=1296299237 instance=ExtResource("1_x7d0j")]

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ccu1tdc5gf8c3"]
+
+[ext_resource type="Script" uid="uid://bxrqwxmqlg5pb" path="res://scripts/hadiah.gd" id="1_l6ulq"]
+[ext_resource type="Texture2D" uid="uid://dvmmu8t304w4d" path="res://icon.svg" id="1_yid0j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l6ulq"]
+size = Vector2(142, 143)
+
+[node name="Hadiah" type="Area2D" unique_id=1336358061]
+script = ExtResource("1_l6ulq")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1023734667]
+texture = ExtResource("1_yid0j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1320951646]
+position = Vector2(0, -1.5)
+shape = SubResource("RectangleShape2D_l6ulq")

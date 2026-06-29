@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://cbp3xmd5y75vx"]
+
+[ext_resource type="Texture2D" uid="uid://dvmmu8t304w4d" path="res://icon.svg" id="1_o5qli"]
+
+[node name="main" type="Node2D" unique_id=1227098566]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=451258424]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=462883966]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/TextureRect" unique_id=919926333]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = -152.0
+offset_right = 1.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="Save" type="Button" parent="CanvasLayer/TextureRect/HBoxContainer" unique_id=752640871]
+layout_mode = 2
+text = "Save"
+icon = ExtResource("1_o5qli")
+
+[node name="Option" type="Button" parent="CanvasLayer/TextureRect/HBoxContainer" unique_id=1577866866]
+layout_mode = 2
+text = "Option"
+icon = ExtResource("1_o5qli")

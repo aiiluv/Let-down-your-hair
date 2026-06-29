@@ -1,8 +1,8 @@
-#LET DOWN YOUR HAIR
+# LET DOWN YOUR HAIR
 
 **A visual novel about a little princess named Layla and her shy friend who lived in a tower**
 
-##PLAY ON ITCH.IO
+## PLAY ON ITCH.IO
 
 <p>
   <a href="https://irineesan.itch.io/let-down-ur-hair" target="_blank">
@@ -10,14 +10,14 @@
   </a>
 </p>
 
-##About
+## About
 
 Layla is a princess in the Kingdom of Pilum. One day, she meet a stranger and follow her into the forest.
 There, she discover a strange yet familiar tower.
 
-##Core Gameplay Mechanics
+## Core Gameplay Mechanics
 
-##Built With
+## Built With
 
 *Godot engine
 *Figma

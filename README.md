@@ -18,7 +18,6 @@ There, she discover a strange yet familiar tower.
 ## Core Gameplay Mechanics
 
 ## Built With
-
-* Godot engine
-* Figma
-* Jitter
+- Godot engine
+- Figma
+- Jitter

@@ -1,0 +1,13 @@
+[background arg="res://assets/bg/InsideCastle.png" fade="0.0"]
+join Layla center
+Narration: By the time Layla returned to the castle, the sky had turned orange.
+join Layla (confuse) center
+Layla: Wow... I still can't believe that exists in real life
+Layla: The singing...
+Layla: The tower...
+Layla: And that hair...
+join Layla (happy) center
+Layla: It looked like something straight out of a fairy tale!
+Layla: ..I have to go back there.
+[signal arg="start_inside_castle"]
+[end_timeline]

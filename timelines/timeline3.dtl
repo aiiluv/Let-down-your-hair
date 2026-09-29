@@ -1,8 +1,17 @@
-kamu mengikuti perempuan itu sampai ke hutan
-tapi karena tertinggal jauh, sekarang kamu tidak dapat menemukannya lagi
-kamu pun beristirahat dibawah pohon
+[background arg="res://assets/bg/forest.png" fade="0.0"]
+join Layla (sus) center
+Narration: Layla hurried after the mysterious girl
+Narration: Before she realized it, she had reached the edge of the forest.
+Narration: The trees stood tall, their leaves swaying gently in the breeze.
+Narration: But the mysterious girl had already disappeared.
+Narration: Layla looked around, searching between the trees.
+join Layla (understand) center
+Layla: I guess I lost her...
 label istirahat
-suasana hutan benar - benar menenangkan..
-kamu menghirup udara yang segar, dan menikmati pemandangan
-sampai kamu mendengar suara nyanyian dari kejauhan
+Narration: The forest was peaceful.
+Narration: Sunlight filtered through the leaves, painting golden patches across the grass.
+Narration: A gentle breeze carried the earthy scent of trees and wildflowers.
+Narration: Somewhere nearby, water quietly flowed through a stream.
+join Layla (happy) center
+Layla: This really is nice...
 jump timeline4/

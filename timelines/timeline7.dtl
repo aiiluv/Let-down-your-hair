@@ -1,0 +1,49 @@
+[background arg="res://assets/bg/forest.png" fade="0.0"]
+Narration: And so she did.
+join Layla center
+Narration: For the next few days, Layla returned to the forest again and again.
+Narration: She secretly watched the old tower from behind the trees.
+Narration: She watched the mysterious woman come and go.
+join Layla (so happy) center
+Narration: She listened to the beautiful songs from the window above.
+join Layla (happy) center
+Narration: Little by little, the tower became part of her daily routine.
+join Layla (confuse) center
+Layla: Five days passed.
+Layla: According to my observations, only two people live in that tower.
+Layla: And the girl who sings up there...
+join Layla (happy) center
+Layla: She looks about my age.
+join Layla center
+Narration: That afternoon, Layla waited until the older woman left the tower.
+Narration: After making sure she was gone, Layla stepped out from hiding.
+[background arg="res://assets/bg/menuScreen.png" fade="0.0"]
+join Layla (sus) center
+Layla: H-Hello?
+Layla: Are you there?
+Narration: Silence.
+Narration: Only the wind answered her.
+Layla: Um...
+Layla: I accidentally heard you singing a few days ago.
+join Layla (happy) center
+Layla: Your voice is really beautiful!
+Narration: A startled voice suddenly came from above.
+join Lily (default) center
+Who are you?!
+join Layla (shock) center
+Narration: Layla immediately straightened up.
+join Layla center
+Layla: I'm Layla!
+Layla: I'm a girl from the nearby village.
+join Layla (confuse) center
+Narration: It was a tiny lie.
+join Layla (default) center
+Narration: Hopefully, a harmless one.
+Layla: What's your name?
+join Lily (curious) center
+Lily: ...My name is Lily.
+join Layla center
+join Lily (happy) center
+Layla: That's a beautiful name!
+Layla: It's nice to meet you, Lily!
+jump timeline8/

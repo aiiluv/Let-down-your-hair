@@ -1,9 +1,9 @@
 extends Node2D
 
 var total_peluru = 8
-var barang_tersisa = 4
+var game_selesai = false
 
-# KOREKSI JALUR NODE (Disesuaikan dengan hierarki CanvasLayer di editor)
+# JALUR NODE
 @onready var sisa_peluru_label = $CanvasLayer/SisaPeluruLabel
 @onready var status_label = $CanvasLayer/StatusLabel
 @onready var pistol = $CanvasLayer/Pistol
@@ -11,26 +11,23 @@ var barang_tersisa = 4
 @onready var tempat_barang = $CanvasLayer/TempatBarang
 
 # Load file scene peluru
-var peluru_scene = preload("res://scenes/peluru.tscn")
+var peluru_scene = preload("res://scenes/game_objects/peluru.tscn")
 
 func _ready():
+	game_selesai = false
 	update_ui()
 	if status_label:
 		status_label.hide()
-	
-	# Menghubungkan sistem deteksi hancur ke semua barang otomatis
-	if tempat_barang:
-		for barang in tempat_barang.get_children():
-			if barang.has_signal("barang_hancur"):
-				barang.connect("barang_hancur", _on_barang_hancur)
 
 func _process(_delta):
+	if game_selesai: return
+	
 	# Membuat pistol berputar mengikuti arah kursor mouse
 	if pistol:
 		pistol.look_at(get_global_mouse_position())
 	
 	# Klik kiri mouse untuk menembak
-	if Input.is_action_just_pressed("click") and total_peluru > 0 and barang_tersisa > 0:
+	if Input.is_action_just_pressed("click") and total_peluru > 0:
 		tembak()
 
 func tembak():
@@ -39,39 +36,54 @@ func tembak():
 	
 	if peluru_scene and marker_peluru:
 		var peluru_instance = peluru_scene.instantiate()
-		
-		# Memunculkan peluru tepat di moncong pistol
 		peluru_instance.global_position = marker_peluru.global_position
-		
-		# Menghitung arah terbang peluru dari pistol menuju posisi mouse saat diklik
 		peluru_instance.arah = (get_global_mouse_position() - marker_peluru.global_position).normalized()
-		
-		# KOREKSI: Masukkan peluru langsung ke scene aktif ini
 		add_child(peluru_instance)
 	
-	# Kondisi cek jika peluru habis
-	if total_peluru == 0 and barang_tersisa > 0:
-		await get_tree().create_timer(1.5).timeout
-		if barang_tersisa > 0:
-			bikin_kalah()
-
-func _on_barang_hancur():
-	barang_tersisa -= 1
-	if barang_tersisa <= 0:
+	# KOREKSI: Cek apakah tembakan barusan membuat barang langsung habis
+	# Kita beri sedikit jeda 0.1 detik agar antrean queue_free() kucing yang tertembak selesai diproses oleh Godot
+	await get_tree().create_timer(0.1).timeout
+	if ambil_jumlah_barang_sisa() == 0:
 		bikin_menang()
+		return
+		
+	# Jika barang belum habis dan peluru sudah menyentuh angka 0, tunggu evaluasi final kalah
+	if total_peluru == 0:
+		cek_kondisi_akhir_game()
+
+func ambil_jumlah_barang_sisa() -> int:
+	if tempat_barang:
+		return tempat_barang.get_child_count()
+	return 0
+
+func cek_kondisi_akhir_game():
+	# Beri jeda 1.5 detik memberikan kesempatan peluru terakhir terbang mengenai target
+	await get_tree().create_timer(1.5).timeout
+	
+	if game_selesai: return
+	
+	# Evaluasi Final setelah peluru terakhir selesai meluncur
+	if ambil_jumlah_barang_sisa() <= 0:
+		bikin_menang()
+	else:
+		bikin_kalah()
 
 func update_ui():
 	if sisa_peluru_label:
-		sisa_peluru_label.text = "Peluru: " + str(total_peluru)
+		sisa_peluru_label.text = "Bullet: " + str(total_peluru)
 
 func bikin_menang():
+	if game_selesai: return
+	game_selesai = true
 	if status_label:
-		status_label.text = "KAMU MENANG!"
+		status_label.text = "YOU WIN!"
 		status_label.modulate = Color.GREEN
 		status_label.show()
 
 func bikin_kalah():
-	if barang_tersisa > 0 and status_label:
-		status_label.text = "KAMU KALAH!"
+	if game_selesai: return
+	game_selesai = true
+	if status_label:
+		status_label.text = "YOU LOSE!"
 		status_label.modulate = Color.RED
 		status_label.show()

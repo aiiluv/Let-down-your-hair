@@ -11,5 +11,4 @@ func _on_mouse_exited() -> void:
 	tween.tween_property(self, "scale", Vector2(1.5, 1.5), 0.2).set_trans(Tween.TRANS_QUINT).set_ease(Tween.EASE_OUT)
 
 func _on_pressed() -> void:
-	Dialogic.start("timeline1")
-	get_tree().change_scene_to_file("res://scenes/main.tscn")
+	get_tree().change_scene_to_file("res://scenes/menu/main.tscn")

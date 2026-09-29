@@ -1,17 +1,15 @@
-suara nyanyian itu ternyata berasal dari sebuah tower tua
-kamu penasaran dan mencoba mendekati tower itu
-Layla: kira - kira siapa orang yang bernyanyi di tower itu ya?
-tiba - tiba kamu mendengar suara langkah kaki lari orang dari kejauhan
-panik, kamu mencoba bersembunyi dibalik pepohonan
-[background fade="0.0"]
-join Layla center
-Layla: aduh! Kenapa aku harus sampai bersembunyi sih?
-Layla: eh diakan..
-ternyata seseorang yang berlari itu adalah perempuan yang kau temui tadi
-penasaran, kamu memilih untuk memperhatikan apa yang sedang ia lakukan
-[clear time="1.0"]
-"Lily's mother": Lily sayang, turunkan rambutmu!
-[background fade="0.0"]
-tidak perlu lama, rambut coklat tebal jatuh turun kebawah dari jendela tower
-perempuan itu lalu menggunakan rambut itu untuk pergi naik keatas tower
+join Layla (default) center
+Narration: Just as Layla was enjoying the peaceful atmosphere of the forest...
+Narration: A faint melody drifted through the air. A song. Soft and gentle
+join Layla (happy) center
+Layla: Where is it coming from?
+Narration: Following the melody, Layla carefully made her way deeper into the forest.
+Narration: Soon, she found an old stone tower covered in vines and moss.
+Narration: Its top disappeared into the trees above.
+Narration: And from one window...
+Narration: The singing continued.
+join Layla (shock) center
+Layla: I wonder who's singing up there...
+Narration: The closer she got, the clearer the voice became.
+Warm. Beautiful. Yet strangely lonely.
 jump timeline5/

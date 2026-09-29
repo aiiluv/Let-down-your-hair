@@ -1,0 +1,151 @@
+[gd_scene format=3 uid="uid://eyb1357ird8w"]
+
+[ext_resource type="PackedScene" uid="uid://drkuhwywtt57f" path="res://scenes/btn/button_back_menu.tscn" id="1_4baay"]
+[ext_resource type="Script" uid="uid://c4r5y5140okwq" path="res://scripts/about.gd" id="1_822oe"]
+[ext_resource type="Texture2D" uid="uid://cao3kwmgkark7" path="res://assets/bg/InsideTower.png" id="1_jvtft"]
+[ext_resource type="StyleBox" uid="uid://b8fvhi5uqos7u" path="res://styles/button-style.tres" id="2_stq1d"]
+[ext_resource type="StyleBox" uid="uid://bm3l17skvf60i" path="res://styles/button-hover-style.tres" id="3_1408j"]
+
+[node name="About" type="Control" unique_id=1290962201]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_822oe")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1674288195]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=930553139]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_jvtft")
+
+[node name="CharInfoBtn" type="Button" parent="CanvasLayer/TextureRect" unique_id=1560495941]
+layout_mode = 1
+offset_left = 338.0
+offset_top = 353.0
+offset_right = 529.0
+offset_bottom = 443.0
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = ExtResource("2_stq1d")
+theme_override_styles/pressed = ExtResource("3_1408j")
+theme_override_styles/hover = ExtResource("3_1408j")
+text = "Chara info"
+
+[node name="StoryBtn" type="Button" parent="CanvasLayer/TextureRect" unique_id=2117113540]
+layout_mode = 1
+offset_left = 338.0
+offset_top = 461.0
+offset_right = 529.0
+offset_bottom = 551.0
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = ExtResource("2_stq1d")
+theme_override_styles/pressed = ExtResource("3_1408j")
+theme_override_styles/hover = ExtResource("3_1408j")
+text = "Story"
+
+[node name="CreditBtn" type="Button" parent="CanvasLayer/TextureRect" unique_id=1886986185]
+layout_mode = 1
+offset_left = 338.0
+offset_top = 578.0
+offset_right = 529.0
+offset_bottom = 668.0
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = ExtResource("2_stq1d")
+theme_override_styles/pressed = ExtResource("3_1408j")
+theme_override_styles/hover = ExtResource("3_1408j")
+text = "Credit"
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/TextureRect" unique_id=456144262]
+layout_mode = 0
+offset_left = 580.0
+offset_top = 229.0
+offset_right = 1389.0
+offset_bottom = 750.0
+color = Color(0.5921569, 0.37254903, 0.21960784, 1)
+
+[node name="ScrollStory" type="ScrollContainer" parent="CanvasLayer/TextureRect/ColorRect" unique_id=2065704995]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = 43.0
+offset_top = 31.0
+offset_right = 775.0
+offset_bottom = 491.0
+
+[node name="LabelStory" type="Label" parent="CanvasLayer/TextureRect/ColorRect/ScrollStory" unique_id=1757054245]
+layout_mode = 2
+theme_override_font_sizes/font_size = 34
+text = "The Untold Story
+
+Long ago, two legendary flowers 
+were said to exist.
+
+The Sun Flower was said to possess 
+a power beyond imagination. 
+Its story has been told for generations.
+
+But what about the other flower?
+The Moon Flower...
+
+Its story was never told.
+What happened to it?
+Where did it go?
+
+And why was its existence erased 
+from history? Years later, news spread 
+that the \"Sun Flower\" had returned.
+
+The kingdom that possessed it 
+became the center of attention once again.
+
+But before anyone could learn 
+the truth behind the flower...
+
+War broke out. The kingdom fell.
+And the story of the Sun Flower 
+was rewritten forever.
+"
+
+[node name="ScrollCharInfo" type="ScrollContainer" parent="CanvasLayer/TextureRect/ColorRect" unique_id=62228283]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = 43.0
+offset_top = 31.0
+offset_right = 775.0
+offset_bottom = 491.0
+
+[node name="LabelCharInfo" type="Label" parent="CanvasLayer/TextureRect/ColorRect/ScrollCharInfo" unique_id=1729018704]
+layout_mode = 2
+theme_override_font_sizes/font_size = 34
+text = "Characters Info"
+
+[node name="ScrollCredit" type="ScrollContainer" parent="CanvasLayer/TextureRect/ColorRect" unique_id=2025207525]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 43.0
+offset_top = 31.0
+offset_right = 775.0
+offset_bottom = 491.0
+
+[node name="LabelCredit" type="Label" parent="CanvasLayer/TextureRect/ColorRect/ScrollCredit" unique_id=133957244]
+layout_mode = 2
+theme_override_font_sizes/font_size = 34
+text = "Credit
+
+Story & Design : Me
+BGM : "
+
+[node name="ButtonBack" parent="CanvasLayer" unique_id=1296299237 instance=ExtResource("1_4baay")]
+offset_left = -30.0
+offset_right = -869.0
+
+[connection signal="pressed" from="CanvasLayer/TextureRect/CharInfoBtn" to="." method="_on_char_info_btn_pressed"]
+[connection signal="pressed" from="CanvasLayer/TextureRect/StoryBtn" to="." method="_on_story_btn_pressed"]
+[connection signal="pressed" from="CanvasLayer/TextureRect/CreditBtn" to="." method="_on_credit_btn_pressed"]

@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 Dialogic="*uid://ds2q0uclmolvu"
 SaveLoad="*uid://k67pb5pvo07o"
+Global="*uid://dp5qpn0yrisaa"
 
 [dialogic]
 
@@ -28,15 +29,22 @@ directories/dch_directory={
 "Lily": "res://Characters/Lily.dch",
 "Lily's mother": "res://Characters/Lily's mother.dch",
 "Melinda": "res://Characters/Melinda.dch",
+"Narration": "res://Characters/Narration.dch",
 "Queen Starla": "res://Characters/Queen Starla.dch"
 }
 directories/dtl_directory={
 "timeline1": "res://timelines/timeline1.dtl",
+"timeline10": "res://timelines/timeline10.dtl",
+"timeline11": "res://timelines/timeline11.dtl",
+"timeline12": "res://timelines/timeline12.dtl",
 "timeline2": "res://timelines/timeline2.dtl",
 "timeline3": "res://timelines/timeline3.dtl",
 "timeline4": "res://timelines/timeline4.dtl",
 "timeline5": "res://timelines/timeline5.dtl",
-"timelinedoneFestival": "res://timelines/timelinedoneFestival.dtl"
+"timeline6": "res://timelines/timeline6.dtl",
+"timeline7": "res://timelines/timeline7.dtl",
+"timeline8": "res://timelines/timeline8.dtl",
+"timeline9": "res://timelines/timeline9.dtl"
 }
 layout/style_directory={
 "": "res://Style.tres",
@@ -44,6 +52,11 @@ layout/style_directory={
 }
 layout/style_list=["res://Style.tres"]
 layout/default_style="res://Style.tres"
+glossary/default_case_sensitive=true
+
+[display]
+
+window/size/resizable=false
 
 [editor_plugins]
 

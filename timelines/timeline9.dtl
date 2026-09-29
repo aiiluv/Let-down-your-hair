@@ -1,0 +1,19 @@
+Narration: Lily was alone in her room.
+Narration: Her mother had left early that morning.
+Lily: Maybe I should play for a while.
+[signal arg="play_inside_tower"]
+label done_playing
+Lily: The view outside is so beautiful...
+Lily: If only I could go outside with Mother.
+Layla: Lily! Hii! Do you still remember me?
+Lily: Layla? Is that you?
+Layla: That's right! You remember me!
+Lily: What are you doing here again?
+Layla: I came to invite you to play!
+Layla: Don't you get bored staying inside the tower?
+Layla: There's a Moon Festival in the village tonight!
+Layla: There'll be lots of food and games!
+Lily: Um...
+Layla: We'll come back before your mother does!
+Lily: ..Alright
+[signal arg="festival_games"]

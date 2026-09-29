@@ -4,14 +4,17 @@
 [ext_resource type="Script" uid="uid://dqc6b7ubit3ea" path="res://scripts/castle.gd" id="1_feow2"]
 [ext_resource type="Texture2D" uid="uid://c7thedtgncb3b" path="res://assets/item/librarybooks.png" id="2_jxdab"]
 [ext_resource type="Texture2D" uid="uid://o7ohyog4ub8w" path="res://assets/item/bedLayla.png" id="3_7pkwf"]
-[ext_resource type="Script" uid="uid://dv3fdnm8cn1jl" path="res://scripts/books.gd" id="3_ha01g"]
 [ext_resource type="Texture2D" uid="uid://j1phi5qv1r31" path="res://assets/item/mapExplore.png" id="4_ha01g"]
+[ext_resource type="Script" uid="uid://b54tufxouyb66" path="res://scripts/books-bedroom.gd" id="4_qd3ve"]
 [ext_resource type="Texture2D" uid="uid://bvk8fleyahcqt" path="res://assets/item/mejaLayla.png" id="5_lbl1g"]
 [ext_resource type="Script" uid="uid://vu08ov0f6xro" path="res://scripts/bed.gd" id="5_uplxu"]
 [ext_resource type="Script" uid="uid://c7k2l7l3w6nh0" path="res://scripts/explore.gd" id="7_feow2"]
 [ext_resource type="Script" uid="uid://c8ftt0fish0ix" path="res://scripts/perapian.gd" id="9_uplxu"]
+[ext_resource type="Script" uid="uid://b6yr5pp8hmog" path="res://scripts/clue.gd" id="11_qd3ve"]
 
 [node name="castle" type="Node2D" unique_id=1295863667]
+z_index = 30
+texture_filter = 2
 script = ExtResource("1_feow2")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1480098499]
@@ -32,7 +35,7 @@ offset_right = 1084.0
 offset_bottom = 439.0
 icon = ExtResource("2_jxdab")
 flat = true
-script = ExtResource("3_ha01g")
+script = ExtResource("4_qd3ve")
 
 [node name="bed" type="Button" parent="CanvasLayer/TextureRect" unique_id=1457164079]
 layout_mode = 0
@@ -65,6 +68,7 @@ flat = true
 script = ExtResource("9_uplxu")
 
 [node name="clue" type="ColorRect" parent="CanvasLayer/TextureRect" unique_id=213343045]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 14
 anchor_top = 0.5
@@ -74,6 +78,7 @@ offset_top = -76.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(1, 1, 1, 0.2627451)
+script = ExtResource("11_qd3ve")
 
 [node name="Label" type="Label" parent="CanvasLayer/TextureRect/clue" unique_id=612262069]
 layout_mode = 1
@@ -91,6 +96,7 @@ text = "Try to interact with every object"
 horizontal_alignment = 1
 
 [node name="locked" type="ColorRect" parent="CanvasLayer/TextureRect" unique_id=1560206102]
+unique_name_in_owner = true
 visible = false
 layout_mode = 1
 anchors_preset = 14
@@ -117,5 +123,20 @@ theme_override_font_sizes/font_size = 30
 text = "This object is locked"
 horizontal_alignment = 1
 
+[node name="pauseBtn" type="Button" parent="CanvasLayer" unique_id=1646400477]
+z_index = 20
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -209.0
+offset_top = 20.0
+offset_right = -16.0
+offset_bottom = 72.0
+grow_horizontal = 0
+text = "Pause"
+
 [connection signal="pressed" from="CanvasLayer/TextureRect/books" to="." method="_on_books_pressed"]
+[connection signal="pressed" from="CanvasLayer/TextureRect/bed" to="." method="_on_bed_pressed"]
 [connection signal="pressed" from="CanvasLayer/TextureRect/explore" to="." method="_on_explore_pressed"]
+[connection signal="pressed" from="CanvasLayer/TextureRect/perapian" to="." method="_on_perapian_pressed"]
+[connection signal="pressed" from="CanvasLayer/pauseBtn" to="." method="_on_pause_btn_pressed"]

@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://br832t02pdrp7"]
+
+[ext_resource type="Texture2D" uid="uid://cevjvn0m4fobw" path="res://assets/item/can.png" id="1_cas4c"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_rgldc"]
+friction = 0.1
+bounce = 0.3
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rgldc"]
+size = Vector2(70, 85)
+
+[node name="Kaleng2D" type="RigidBody2D" unique_id=6798138]
+mass = 0.2
+physics_material_override = SubResource("PhysicsMaterial_rgldc")
+
+[node name="ColorRect" type="Sprite2D" parent="." unique_id=1501860239]
+position = Vector2(36, 40)
+scale = Vector2(0.5905172, 0.5905171)
+texture = ExtResource("1_cas4c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2077765191]
+position = Vector2(36, 42.5)
+shape = SubResource("RectangleShape2D_rgldc")

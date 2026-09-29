@@ -10,12 +10,49 @@
 "style": "",
 "suffix": ""
 },
-&"default_portrait": "",
+&"default_portrait": "default",
 &"description": "",
 &"display_name": "Lily",
 &"mirror": false,
 &"nicknames": [""],
-&"offset": Vector2(0, 0),
-&"portraits": {},
+&"offset": Vector2(400, 120),
+&"portraits": {
+"curious": {
+"export_overrides": {
+"image": "\"res://assets/chara/lily oc/lily curious.png\""
+},
+"mirror": true,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"default": {
+"export_overrides": {
+"image": "\"res://assets/chara/lily oc/lily normal.png\""
+},
+"mirror": true,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"happy": {
+"export_overrides": {
+"image": "\"res://assets/chara/lily oc/lily happy.png\""
+},
+"mirror": true,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"nervous": {
+"export_overrides": {
+"image": "\"res://assets/chara/lily oc/lily nervous.png\""
+},
+"mirror": true,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
 &"scale": 1.0
 }

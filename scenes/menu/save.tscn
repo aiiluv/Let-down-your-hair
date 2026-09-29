@@ -1,0 +1,127 @@
+[gd_scene format=3 uid="uid://dtwqlnnj8klhn"]
+
+[ext_resource type="Script" uid="uid://ds27a1fvlpkud" path="res://scripts/save_load.gd" id="1_h4jts"]
+[ext_resource type="Texture2D" uid="uid://dkwlowacdtyve" path="res://assets/bg/menuScreen.png" id="2_1nhlm"]
+[ext_resource type="FontFile" uid="uid://cc4xli25271fd" path="res://addons/dialogic/Example Assets/Fonts/Roboto-Bold.ttf" id="3_1nhlm"]
+[ext_resource type="Texture2D" uid="uid://douspg3y4s4o8" path="res://assets/item/semak.png" id="4_07keo"]
+[ext_resource type="Texture2D" uid="uid://bgbj1u6mgn527" path="res://assets/item/semak2.png" id="5_y2n3b"]
+[ext_resource type="PackedScene" uid="uid://drkuhwywtt57f" path="res://scenes/btn/button_back_menu.tscn" id="6_1qxx4"]
+
+[node name="Save_load" type="Control" unique_id=588443126]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_h4jts")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=735801706]
+unique_name_in_owner = true
+process_mode = 3
+layer = 20
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer" unique_id=656766202]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -5.0000305
+offset_top = -8.000015
+offset_right = 1787.9998
+offset_bottom = 1071.4999
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_1nhlm")
+
+[node name="slotGrid" type="GridContainer" parent="CanvasLayer/TextureRect2" unique_id=306842959]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -759.99976
+offset_top = -544.3333
+offset_right = 941.2345
+offset_bottom = 695.6667
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.9, 0.9)
+theme_override_constants/h_separation = 40
+theme_override_constants/v_separation = 40
+columns = 2
+
+[node name="slot1" type="Button" parent="CanvasLayer/TextureRect2/slotGrid" unique_id=1484013246]
+custom_minimum_size = Vector2(800, 600)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_1nhlm")
+theme_override_font_sizes/font_size = 32
+flat = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="slot2" type="Button" parent="CanvasLayer/TextureRect2/slotGrid" unique_id=1320250635]
+custom_minimum_size = Vector2(800, 600)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_1nhlm")
+theme_override_font_sizes/font_size = 32
+flat = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="slot3" type="Button" parent="CanvasLayer/TextureRect2/slotGrid" unique_id=2122352973]
+custom_minimum_size = Vector2(800, 600)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_1nhlm")
+theme_override_font_sizes/font_size = 32
+flat = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="slot4" type="Button" parent="CanvasLayer/TextureRect2/slotGrid" unique_id=1099505422]
+custom_minimum_size = Vector2(800, 600)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_1nhlm")
+theme_override_font_sizes/font_size = 32
+flat = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="semak" type="Button" parent="CanvasLayer/TextureRect2" unique_id=1274228001]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2197.5
+offset_top = -17.499962
+offset_right = -119.499756
+offset_bottom = -1221.9998
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.2, 1.2)
+icon = ExtResource("4_07keo")
+flat = true
+
+[node name="semak2" type="Button" parent="CanvasLayer/TextureRect2" unique_id=1309183718]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -2.5
+offset_top = 942.5
+offset_right = -2226.6665
+offset_bottom = -13.441284
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.2, 1.2)
+icon = ExtResource("5_y2n3b")
+flat = true
+
+[node name="ButtonBack" parent="CanvasLayer" unique_id=1296299237 instance=ExtResource("6_1qxx4")]

@@ -1,32 +1,48 @@
-sesampainya dipasar, kamu berjalan sembari menyapa semua orang
-memang kedatanganmu adalah suatu hal biasa bagi para warga pasar
-join Layla center
-selamat pagi putri!
-hohoho, lama tidak berjumpa putri, apa kamu sudah menemukan best camp baru?
-putri, apakah kamu ingin mencoba kue pie ini? Traktiranku!
-semua menyambutmu dengan suka cita.
+[background arg="res://assets/bg/village.png" fade="0.0"]
+Narration: Not long after leaving the castle, Layla arrived at the marketplace.
+Narration: The streets were as lively as ever, filled with merchants and cheerful chatter.
+Narration: Fresh fruits, colorful fabrics, handmade crafts, and pastries filled the stalls.
+join Layla (default) center
+Narration: Layla strolled through the market, greeting everyone with a warm smile.
+Good morning, Princess!
+Hohoho! It's been a while, Princess!
+Have you found another perfect camping spot yet?
+Princess! Would you like to try one of my fresh pies? It's on the house!
 [clear time="1.0"]
-join Layla center
-Layla: terimakasih banyak! Tapi mungkin lain kali, aku ingin berkeliling terlebih dahulu!
-brak!
-Layla: aduh!
+join Layla (so happy) center
+Layla: Thank you so much, everyone!
+Layla: But maybe later. I want to take a look around first!
+Narration: She continued walking through the crowded streets.
+Narration: Then—
+join Layla (shock) center
+Narration: Bump!
+join Layla (confuse) center
+Narration: Layla suddenly collided with someone.
+Narration: The impact wasn't hard, but both of them stumbled backward.
 [clear time="1.0"]
 [background fade="0.0"]
-kamu bertabrakan dengan orang lain
-Layla: yaampun! Maafkan aku, apakah engkau baik - baik saja?
-[background fade="0.0"]
-join "Lily's mother" center
-"Lily's mother": i-iya.. terimakasih
-perasaanmu aneh, sepertinya kamu tidak pernah bertemu dengan perempuan itu
-Layla: apakah kamu musafir? Aku tidak pernah bertemu denganmu
-"Lily's mother": k-kalau begitu.. selamat tinggal!
-Layla: h-hei!
-[clear time="1.0"]
-dia pergi begitu saja..
-[background fade="0.0"]
-join Layla center
-Layla: hmmm, dia kenapa ya? Ah, mungkin dia sedang terburu - buru
-Layla: ah, tunggu.. apa ini?
-Layla: sepertinya ini adalah barang miliknya. Harus aku kembalikan!
-kamu pun berlari mengejar orang itu sampai kehutan
+Layla: Oh my goodness!
+Layla: She quickly reached out her hand.
+Narration: The woman looked nervous... almost frightened.
+I-I'm fine...
+join Layla (sus) center
+Narration: Something felt strange.
+Narration: Layla knew almost everyone in Pilum, but she had never seen this woman before.
+join Layla (confuse) center
+Layla: Are you a traveler? I don't think we've met before.
+Narration: The mysterious girl suddenly froze.
+Narration: Her eyes widened, as if those simple words had startled her.
+Narration: Without another word, she turned around and ran.
+join Layla (shock) center
+Narration: Layla blinked in confusion and scratched the back of her head.
+join Layla (sus) center
+Layla: Maybe she was in a hurry...
+Narration: Something on the ground caught her attention.
+Narration: A small object lay where they had bumped into each other.
+join Layla (confuse) center
+Layla: Huh? Isn't this hers
+Narration: She carefully picked it up and turned it over in her hands.
+join Layla (shock) center
+Layla: It must have fallen when we bumped into each other.
+Layla: I have to return it!
 jump timeline3/

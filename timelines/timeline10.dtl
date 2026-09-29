@@ -1,0 +1,41 @@
+[background arg="res://assets/bg/playFest.png" fade="0.0"]
+Narration: They sat side by side on the Ferris wheel, enjoying the view.
+Narration: As the carriage slowly rose, they laughed and chatted together.
+Narration: For Lily, everything tonight felt completely new.
+Narration: Just a few days ago, she had never even left the tower.
+[background arg="res://assets/bg/playFest (1).png" fade="0.0"]
+Narration: Now, she was secretly exploring the festival with her new friend.
+Narration: They played every game the festival had to offer.
+[background arg="res://assets/bg/festival.png" fade="0.0"]
+join Layla (sus) center
+join Lily (default) center
+join  center
+Narration: Before either of you realized it, night had already fallen.
+Narration: The two of you ran as fast as you could.
+Narration: You suddenly collided with someone.
+[clear time="1.0"]
+[background arg="res://assets/bg/festivalPlay.png" fade="0.0"]
+join "Lily's mother" center
+join Lily (curious) center
+Lily: M-Mother?
+"Lily's mother": Lily?! What are you doing here?
+join Lily (nervous) center
+Lily: I-It's... Mother, I...
+"Lily's mother": Come. We're leaving.
+[clear time="1.0"]
+[background arg="res://assets/bg/festivalPlay.png" fade="0.0"]
+join Layla (confuse) center
+Narration: Layla stood there, watching them disappear.
+Narration: She couldn't help but feel guilty.
+Narration: On her way back, Layla stopped by an old woman in the village.
+join Melinda center
+Melinda: Your friend... What's her name?
+Layla: Um... It's Lily.
+Melinda: Hoho. What a beautiful girl.
+Melinda: She reminds me of that golden-haired girl i met
+Melinda: They both have such long hair...
+Layla: What do you mean, Auntie?
+Layla: There is no golden-haired girl in Pilum.
+Melinda: Long ago...
+[clear time="1.0"]
+jump timeline11/

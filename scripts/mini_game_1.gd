@@ -6,7 +6,7 @@ var bola_dilempar = false
 
 # Ambil referensi ke TextureRect tempat bola & kaleng berada
 @onready var texture_rect = $CanvasLayer/TextureRect
-@onready var status_label = $StatusLabel
+@onready var status_label = %StatusLabel
 
 # Gunakan jalur lengkap lewat TextureRect
 @onready var bola = $CanvasLayer/TextureRect/Bola2D
@@ -43,16 +43,16 @@ func _on_lantai_bawah_body_entered(body: Node) -> void:
 		body.queue_free() 
 		
 		# GANTI DI SINI: Ubah dari 'total_kaleng' menjadi angka 3
-		if kaleng_jatuh >= 3:
+		if kaleng_jatuh >= 2:
 			bikin_menang()
 
 func bikin_menang():
-	status_label.text = "KAMU MENANG!"
+	status_label.text = "YOU WIN!"
 	status_label.modulate = Color.GREEN
 	status_label.show()
 
 func bikin_kalah():
 	if kaleng_jatuh < total_kaleng:
-		status_label.text = "KAMU KALAH!"
+		status_label.text = "YOU LOSE!"
 		status_label.modulate = Color.RED
 		status_label.show()

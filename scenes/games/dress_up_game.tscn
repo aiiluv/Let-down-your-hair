@@ -1,0 +1,143 @@
+[gd_scene format=3 uid="uid://cqaq40ccofndp"]
+
+[ext_resource type="Script" uid="uid://d1r7idfl0fkko" path="res://scripts/dress_up_game.gd" id="1_pwarc"]
+[ext_resource type="Texture2D" uid="uid://1e57u7rutfk8" path="res://assets/dressUp/face-1.png" id="2_73rha"]
+[ext_resource type="Texture2D" uid="uid://cao3kwmgkark7" path="res://assets/bg/InsideTower.png" id="2_pbvr3"]
+[ext_resource type="PackedScene" uid="uid://k0d5q247i4k3" path="res://scenes/btn/button_back_tower.tscn" id="2_ugr38"]
+[ext_resource type="Texture2D" uid="uid://cmjavo3wxwn7d" path="res://assets/dressUp/face-2.png" id="3_klbk4"]
+[ext_resource type="Texture2D" uid="uid://cp280bnb36j7s" path="res://assets/dressUp/face.png" id="4_w36d2"]
+[ext_resource type="Texture2D" uid="uid://bmomp2tdoaq1" path="res://assets/dressUp/bangs-1.png" id="5_t72xl"]
+[ext_resource type="Texture2D" uid="uid://ca4l3yro51341" path="res://assets/dressUp/bangs-2.png" id="6_v8nfq"]
+[ext_resource type="Texture2D" uid="uid://d01pl31xrtpbv" path="res://assets/dressUp/bangs.png" id="7_xmtin"]
+[ext_resource type="Texture2D" uid="uid://davb0rd0dle3" path="res://assets/dressUp/back-hair-1.png" id="8_xbrqu"]
+[ext_resource type="Texture2D" uid="uid://dnexdqc2pf52i" path="res://assets/dressUp/back-hair-2.png" id="9_7iqou"]
+[ext_resource type="Texture2D" uid="uid://8yeamfr41m5s" path="res://assets/dressUp/back-hair.png" id="10_8pkil"]
+[ext_resource type="Texture2D" uid="uid://dmk0dotyw16sh" path="res://assets/dressUp/dress-1.png" id="11_61wl0"]
+[ext_resource type="Texture2D" uid="uid://c1l14mkxrbted" path="res://assets/dressUp/dress-2.png" id="12_ylohu"]
+[ext_resource type="Texture2D" uid="uid://c67fd0lpsar06" path="res://assets/dressUp/dress.png" id="13_c8nh1"]
+[ext_resource type="Texture2D" uid="uid://c2r2fdj7cj747" path="res://assets/dressUp/accessories-1.png" id="14_81xd8"]
+[ext_resource type="Texture2D" uid="uid://ctlcy1v8s7yby" path="res://assets/dressUp/accessories-2.png" id="15_u3ka7"]
+[ext_resource type="Texture2D" uid="uid://b6gfnwgvbun4q" path="res://assets/dressUp/accessories-3.png" id="16_gredq"]
+[ext_resource type="Texture2D" uid="uid://5datkvn5mv00" path="res://assets/dressUp/accessories.png" id="17_0nj73"]
+[ext_resource type="StyleBox" uid="uid://b8fvhi5uqos7u" path="res://styles/button-style.tres" id="19_n62sm"]
+[ext_resource type="StyleBox" uid="uid://bm3l17skvf60i" path="res://styles/button-hover-style.tres" id="20_2da4a"]
+
+[node name="DressUpGame" type="Node2D" unique_id=207122129]
+script = ExtResource("1_pwarc")
+list_muka = Array[Texture2D]([ExtResource("2_73rha"), ExtResource("3_klbk4"), ExtResource("4_w36d2")])
+list_poni = Array[Texture2D]([ExtResource("5_t72xl"), ExtResource("6_v8nfq"), ExtResource("7_xmtin")])
+list_rambut = Array[Texture2D]([ExtResource("8_xbrqu"), ExtResource("9_7iqou"), ExtResource("10_8pkil")])
+list_baju = Array[Texture2D]([ExtResource("11_61wl0"), ExtResource("12_ylohu"), ExtResource("13_c8nh1")])
+list_aksesoris1 = Array[Texture2D]([ExtResource("14_81xd8"), ExtResource("15_u3ka7"), ExtResource("16_gredq"), ExtResource("17_0nj73")])
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2001524395]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1511932710]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_pbvr3")
+
+[node name="Character" type="Control" parent="CanvasLayer/TextureRect" unique_id=105731018]
+anchors_preset = 0
+offset_left = 58.0
+offset_top = 39.0
+offset_right = 98.0
+offset_bottom = 79.0
+
+[node name="BaseBody" type="Sprite2D" parent="CanvasLayer/TextureRect/Character" unique_id=1745427722]
+
+[node name="Hair" type="Sprite2D" parent="CanvasLayer/TextureRect/Character" unique_id=898808052]
+unique_name_in_owner = true
+position = Vector2(848.79395, 473.1486)
+scale = Vector2(0.16748346, 0.21051607)
+texture = ExtResource("10_8pkil")
+
+[node name="Face" type="Sprite2D" parent="CanvasLayer/TextureRect/Character" unique_id=1687274568]
+unique_name_in_owner = true
+position = Vector2(834, 376)
+scale = Vector2(0.17470859, 0.17470858)
+texture = ExtResource("3_klbk4")
+
+[node name="Poni" type="Sprite2D" parent="CanvasLayer/TextureRect/Character" unique_id=1937808147]
+unique_name_in_owner = true
+position = Vector2(836.9999, 304)
+scale = Vector2(0.17738189, 0.17738186)
+texture = ExtResource("6_v8nfq")
+
+[node name="DressBody" type="Sprite2D" parent="CanvasLayer/TextureRect/Character" unique_id=913256581]
+unique_name_in_owner = true
+position = Vector2(832.00006, 614.00006)
+scale = Vector2(0.30287293, 0.30287293)
+texture = ExtResource("13_c8nh1")
+
+[node name="Accessories1" type="Sprite2D" parent="CanvasLayer/TextureRect/Character" unique_id=2144452953]
+unique_name_in_owner = true
+position = Vector2(854, 254)
+scale = Vector2(0.15117697, 0.15564953)
+texture = ExtResource("17_0nj73")
+
+[node name="HBoxContainer" type="VBoxContainer" parent="CanvasLayer/TextureRect" unique_id=733481291]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1176.0
+offset_top = -773.0
+offset_right = -346.0
+offset_bottom = -393.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="ButtonFace" type="Button" parent="CanvasLayer/TextureRect/HBoxContainer" unique_id=1007644431]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = ExtResource("19_n62sm")
+theme_override_styles/hover = ExtResource("20_2da4a")
+text = "Face"
+
+[node name="ButtonPoni" type="Button" parent="CanvasLayer/TextureRect/HBoxContainer" unique_id=169627242]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = ExtResource("19_n62sm")
+theme_override_styles/hover = ExtResource("20_2da4a")
+text = "Bangs"
+
+[node name="ButtonHair" type="Button" parent="CanvasLayer/TextureRect/HBoxContainer" unique_id=2132735444]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = ExtResource("19_n62sm")
+theme_override_styles/hover = ExtResource("20_2da4a")
+text = "Hair"
+
+[node name="ButtonDress" type="Button" parent="CanvasLayer/TextureRect/HBoxContainer" unique_id=1505154207]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = ExtResource("19_n62sm")
+theme_override_styles/hover = ExtResource("20_2da4a")
+text = "Dress"
+
+[node name="ButtonAccessories1" type="Button" parent="CanvasLayer/TextureRect/HBoxContainer" unique_id=2127476883]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = ExtResource("19_n62sm")
+theme_override_styles/hover = ExtResource("20_2da4a")
+text = "Accessories"
+
+[node name="ButtonBackTower" parent="CanvasLayer" unique_id=1296299237 instance=ExtResource("2_ugr38")]
+
+[connection signal="pressed" from="CanvasLayer/TextureRect/HBoxContainer/ButtonFace" to="." method="_on_button_face_pressed"]
+[connection signal="pressed" from="CanvasLayer/TextureRect/HBoxContainer/ButtonPoni" to="." method="_on_button_poni_pressed"]
+[connection signal="pressed" from="CanvasLayer/TextureRect/HBoxContainer/ButtonHair" to="." method="_on_button_hair_pressed"]
+[connection signal="pressed" from="CanvasLayer/TextureRect/HBoxContainer/ButtonDress" to="." method="_on_button_dress_pressed"]
+[connection signal="pressed" from="CanvasLayer/TextureRect/HBoxContainer/ButtonAccessories1" to="." method="_on_button_accessories_1_pressed"]

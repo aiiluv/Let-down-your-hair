@@ -10,6 +10,7 @@
 [ext_resource type="Script" uid="uid://civimfdft3rd6" path="res://scripts/btn_paint.gd" id="8_p8022"]
 
 [node name="tower" type="Node2D" unique_id=1938250569]
+z_index = 30
 script = ExtResource("1_jfguu")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1454896279]
@@ -115,6 +116,19 @@ text = "Window locked
 try again after doing some activities"
 horizontal_alignment = 1
 
+[node name="pauseBtn" type="Button" parent="CanvasLayer" unique_id=1731984050]
+z_index = 20
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -209.0
+offset_top = 20.0
+offset_right = -16.0
+offset_bottom = 72.0
+grow_horizontal = 0
+text = "Pause"
+
 [connection signal="pressed" from="CanvasLayer/TextureRect/dressUp" to="." method="_on_dress_up_pressed"]
 [connection signal="pressed" from="CanvasLayer/TextureRect/Window" to="." method="_on_window_pressed"]
 [connection signal="pressed" from="CanvasLayer/TextureRect/Paint" to="." method="_on_paint_pressed"]
+[connection signal="pressed" from="CanvasLayer/pauseBtn" to="." method="_on_pause_btn_pressed"]

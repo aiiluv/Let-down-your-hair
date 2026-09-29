@@ -36,4 +36,4 @@ func mulai_animasi(target_skala: Vector2, target_warna: Color):
 	tween_warna.tween_property(self, "self_modulate", target_warna, 0.15).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
 
 func _on_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/about.tscn")
+	get_tree().change_scene_to_file("res://scenes/menu/about.tscn")

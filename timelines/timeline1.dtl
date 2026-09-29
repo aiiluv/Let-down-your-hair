@@ -1,18 +1,27 @@
 [background arg="res://assets/bg/village.png" fade="0.0"]
-Pagi hari yang cerah di kerajaan Pilum, semua orang sibuk berdagang, bekerja, sangat damai dan tentram
+Narration: Bright sunlight bathed the Kingdom of Pilum.\
+The peaceful streets were already bustling.
 [background arg="res://assets/bg/Castle.png" fade="0.0"]
-begitupun dengan keadaan di Istana
 join Layla (so happy) center
-Layla: Sungguh hari yang cerah!
-Layla: Ini adalah waktu yang tepat untuk berkelana!
-kamu, seorang putri di kerajaan pilum yang sangat menyukai petualangan
-Layla: kira - kira tempat mana lagi yang harus kukunjungi ya?
-- pasar
-	Layla: mungkin pasar adalah pilihan bagus!
-	Layla: sudah lama aku tidak kesana, aku penasaran semua orang sedang sibuk apa!
+Layla: What a beautiful day!
+Narration: Layla rested her hands on the balcony railing, admiring the sky.
+join Layla (happy) center
+Layla: I can't waste weather like this.
+Narration: A playful grin appeared on her face.
+join Layla (default) center
+Layla: So, where should I go today?
+- Marketplace
+	Narration: Her eyes lit up as an idea suddenly came to mind.
+	join Layla (so happy) center
+	Layla: The marketplace!
+	Narration: She smiled brightly.
+	join Layla (happy) center
+	I haven't been there in ages. I wonder what everyone's doing today.
 	jump timeline2/
-- hutan
-	Layla: hutan pastinya adalah pilihan yang tepat!
-	Layla: pepohonan lebat, angin sejuk, suara gemericik air sungai..
-	Layla: tempat yang pas untuk mencari petualangan baru!
+- Forest
+	Narration: Layla turned toward the vast forest beyond the castle walls.
+	join Layla (so happy) center
+	Layla: The forest sounds wonderful too.
+	Narration: She imagined the trees swaying gently in the morning breeze.
+	Layla: Maybe today's adventure is waiting for me there.
 	jump timeline3/istirahat

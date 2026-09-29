@@ -1,35 +1,21 @@
-kamu sudah berada didalam kamarmu lagi
-masih teringat dengan kejadian yang baru saja kau lihat
-join Layla center
-Layla: Waw... aku tidak percaya ada hal seperti itu di dunia nyata
-Layla: itu terlihat seperti sesuatu yang terjadi di dunia dongeng! Luar biasa!
-Layla: aku harus pergi kesana lagi..
-[clear time="1.0"]
-[background fade="0.0"]
-hari - hari berikutnya kamu gunakan untuk pergi kehutan dan memata - matai tower itu
-dan setelah 5 hari berlalu, kamu memutuskan untuk menyapa orang yang berada di atas tower
-Layla: oke, dari pengamatanku selama ini, hanya ada dua orang yang tinggal di tower itu.
-Layla: sepertinya perempuan yang bernyanyi di tower itu seumuranku..
-Layla: aku ingin berkenalan dengannya!
-begitulah, kamu kembali datang ke tower setelah memastikan ibu dari gadis pergi
-\setelah itu kamu bergegas mendekati tower, dan dengan ragu - ragu memanggil anak gadis didalam tower
-[background fade="0.0"]
-join Layla center
-Layla: haloo! Apakah kau disana?
-Layla: !!
-Layla: euumm.. aku.... aku pernah tidak sengaja mendengarmu bernyanyi! Suaramu sangat merdu!
-Lily: Siapa kamu?!
-Lily: Aku Layla! Aku anak yang tinggal di desa
-Layla: siapa namamu?
-tak ada jawaban setelah itu..
-kamu menunggu dengan penuh harap..
-Lily: eum.. namaku Lily
-Layla: Nama yang bagus!
-Layla: Senang berkenalan denganmu Lily!
-kamu sangat senang dapat berkenalan dengan Lily
-agar semakin akrab, kamu mencoba membuka topik obrolan
-kalian berbincang sampai hari mulai sore
-Layla: oh tidak! Sudah mau sore
-Layla: aku harus segera pulang, kalau tidak bundaku akan marah (dan perempuan itu sebentar lagi kembali)
-Layla: dadaa Lily, sampai bertemu besok!
-jump
+Narration: Suddenly—
+join Layla (shock) center
+Narration: Crunch. Crunch. Crunch.
+Narration: Hurried footsteps echoed through the forest.
+join Layla (sus) center
+Narration: Layla immediately froze.
+Layla: Someone was running toward the tower.
+Narration: Without thinking, she hid behind a nearby tree.
+join Layla (confuse) center
+Layla: W-Wait! Why am I hiding in the first place?!
+Narration: The person running toward the tower was the mysterious woman.
+Narration: The same girl Layla had chased from the marketplace.
+"Lily's mother": Lily, dear! Let down your hair!
+Narration: A long chestnut-brown braid spilled from the window.
+Narration: It cascaded down the tower like a waterfall of silk.
+join Layla (shock) center
+Narration: Layla's eyes widened in disbelief.
+Narration: Without hesitation, the girl grabbed the braid.
+Narration: She began climbing upward, using the hair like a rope.
+Narration: Until she disappeared through the window.
+jump timeline6/

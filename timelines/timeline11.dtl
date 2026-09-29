@@ -1,0 +1,45 @@
+[background arg="res://assets/bg/castle (1).png" fade="0.0"]
+join Layla (sus) center
+Narration: Layla hurried back to the palace.
+[background arg="res://assets/bg/library.png" fade="0.0"]
+Narration: She immediately headed for the library.
+Layla: There has to be something here.
+Narration: Something about our old history..
+[signal arg="go_to_library"]
+label found_the_truth
+Layla: This.. this was the truth..
+join Layla (shock) center
+Layla (confuse): A history that had never been spoken of again...
+join Layla (confuse) center
+Layla: I have to tell Mother!
+join "Queen Starla" center
+"Queen Starla": Layla? What's wrong?
+"Queen Starla": Why are you so out of breath?
+Layla: Why have you never told me?
+"Queen Starla": Told you what?
+Layla: The Kingdom of Pilum!
+Layla: The stolen land, the twin flowers, Rapunzel, and the missing princess!
+Layla: All of it!
+Layla: Why have you never told me?
+"Queen Starla": Layla...
+Layla: All this time... were we invaders?
+Layla: Was my family responsible for all of this?
+Narration: Silence filled the room.
+Layla: It's true, isn't it?
+"Queen Starla": It was your grandfather's wish.
+"Queen Starla": Your grandmother was very ill when she was pregnant with me
+"Queen Starla": You know the legend...
+"Queen Starla": The flowers. The knights were sent to find the legendary flower.
+"Queen Starla": But they were wrong.
+"Queen Starla": They found the wrong flower.
+"Queen Starla": Your grandmother died, and I was born.
+"Queen Starla": The flower wasn't as powerful as the Sun Flower.
+"Queen Starla": When he learned another kingdom had the Sun Flower..
+"Queen Starla": And that they were living happily together...
+"Queen Starla": Something inside him changed
+"Queen Starla": Jealousy consumed him
+Layla: We have to tell Lily.
+Layla: The throne... this kingdom...
+Layla: They don't belong to us
+"Queen Starla": You're right
+jump timeline12/

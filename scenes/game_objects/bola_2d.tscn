@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bleesajf00myr"]
+
+[ext_resource type="Script" uid="uid://b1upuihfj2dcy" path="res://scripts/bola_2d.gd" id="1_1kyvj"]
+[ext_resource type="Texture2D" uid="uid://dld7xx5n5bqru" path="res://assets/item/moonBall.png" id="2_dmh2m"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_def0y"]
+radius = 65.09416
+
+[node name="Bola2D" type="RigidBody2D" unique_id=113336579]
+freeze = true
+script = ExtResource("1_1kyvj")
+
+[node name="ColorRect" type="Sprite2D" parent="." unique_id=804594269]
+position = Vector2(53, 23.999998)
+scale = Vector2(0.6861702, 0.6861702)
+texture = ExtResource("2_dmh2m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2142978923]
+position = Vector2(54, 27.5)
+shape = SubResource("CircleShape2D_def0y")

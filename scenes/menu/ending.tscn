@@ -1,3 +1,31 @@
 [gd_scene format=3 uid="uid://eoute2xj4vg6"]
 
+[ext_resource type="Texture2D" uid="uid://baajntr8l2tf4" path="res://assets/bg/promise.png" id="1_0356c"]
+[ext_resource type="PackedScene" uid="uid://drkuhwywtt57f" path="res://scenes/btn/button_back_menu.tscn" id="2_xadrh"]
+
 [node name="Ending" type="Node2D" unique_id=1436480362]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=635692984]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1983563709]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_0356c")
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=949970189]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 130.0
+offset_top = 475.0
+offset_right = 516.0
+offset_bottom = 612.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.15927762, 0.07612149, 0.020225313, 1)
+theme_override_font_sizes/font_size = 100
+text = "The End"
+
+[node name="ButtonBackMenu" parent="CanvasLayer" unique_id=1296299237 instance=ExtResource("2_xadrh")]

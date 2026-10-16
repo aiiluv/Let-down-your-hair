@@ -28,7 +28,8 @@ join Layla (confuse) center
 Narration: Layla stood there, watching them disappear.
 Narration: She couldn't help but feel guilty.
 Narration: But then Lily peek a glance to her
-[background fade="0.0"]
+[clear time="1.0"]
+[background arg="res://assets/bg/goodbye.png" fade="0.0"]
 Lily: Let's play again tomorrow!
 [signal arg="DONE"]
 [clear time="1.0"]

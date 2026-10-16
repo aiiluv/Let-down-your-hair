@@ -1,3 +1,16 @@
 [gd_scene format=3 uid="uid://jko2ajkxhxkk"]
 
+[ext_resource type="PackedScene" uid="uid://cdjkt1nh8k7af" path="res://scenes/btn/btn_back_map.tscn" id="1_6qvxg"]
+
 [node name="River" type="Node2D" unique_id=436769544]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1064809437]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1565671393]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BtnBackMap" parent="CanvasLayer" unique_id=1668699948 instance=ExtResource("1_6qvxg")]

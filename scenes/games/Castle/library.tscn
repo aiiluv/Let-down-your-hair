@@ -1,5 +1,8 @@
 [gd_scene format=3 uid="uid://c60xua1vwlthg"]
 
+[ext_resource type="PackedScene" uid="uid://cmbr5esabvhgw" path="res://scenes/btn/btn_back_room.tscn" id="1_tteif"]
+[ext_resource type="Script" uid="uid://cec5wvjev1jr8" path="res://scripts/btn_back_room.gd" id="2_vu086"]
+
 [node name="Library" type="Node2D" unique_id=1393672657]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=656227618]
@@ -10,3 +13,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="BtnBackRoom" parent="CanvasLayer" unique_id=1384816665 instance=ExtResource("1_tteif")]
+script = ExtResource("2_vu086")
+
+[connection signal="pressed" from="CanvasLayer/BtnBackRoom" to="CanvasLayer/BtnBackRoom" method="_on_pressed"]

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cdjkt1nh8k7af"]
+
+[ext_resource type="Texture2D" uid="uid://cfkwicur5py35" path="res://assets/btn/btnBack.png" id="1_mcb67"]
+[ext_resource type="Script" uid="uid://cjv71hkssovqr" path="res://scripts/btn_back_map.gd" id="2_13fft"]
+
+[node name="BtnBackMap" type="Button" unique_id=1668699948]
+offset_right = 8.0
+offset_bottom = 8.0
+scale = Vector2(0.5, 0.5)
+pivot_offset = Vector2(156.5, 57.5)
+icon = ExtResource("1_mcb67")
+flat = true
+script = ExtResource("2_13fft")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="pressed" from="." to="." method="_on_pressed"]

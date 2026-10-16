@@ -13,11 +13,7 @@ func _on_to_market_pressed() -> void:
 	%locked.visible = false
 	
 func _on_to_forest_pressed() -> void:
-	%locked.visible = true
-	await get_tree().create_timer(2.0).timeout
-	%locked.visible = false
+	get_tree().change_scene_to_file("res://scenes/games/Map places/forest.tscn")
 
 func _on_to_river_pressed() -> void:
-	%locked.visible = true
-	await get_tree().create_timer(2.0).timeout
-	%locked.visible = false
+	get_tree().change_scene_to_file("res://scenes/games/Map places/river.tscn")

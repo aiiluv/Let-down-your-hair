@@ -1,5 +1,8 @@
 [gd_scene format=3 uid="uid://ddrf5olkb448f"]
 
+[ext_resource type="PackedScene" uid="uid://cmbr5esabvhgw" path="res://scenes/btn/btn_back_room.tscn" id="1_1yo7a"]
+[ext_resource type="Script" uid="uid://cec5wvjev1jr8" path="res://scripts/btn_back_room.gd" id="2_6llwe"]
+
 [node name="Perapian" type="Node2D" unique_id=922371690]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2075280049]
@@ -10,3 +13,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="BtnBackRoom" parent="CanvasLayer" unique_id=1384816665 instance=ExtResource("1_1yo7a")]
+script = ExtResource("2_6llwe")
+
+[connection signal="pressed" from="CanvasLayer/BtnBackRoom" to="CanvasLayer/BtnBackRoom" method="_on_pressed"]

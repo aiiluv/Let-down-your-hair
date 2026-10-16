@@ -59,12 +59,11 @@ func _on_dialogic_signal(argument: String) -> void:
 		#simpan scene sekarang ke slot save aktif dialogic
 		Dialogic.Save.save_file("default", "current_scene.txt", Global.current_scene_path)
 		get_tree().change_scene_to_file(Global.current_scene_path)
-	
-	elif argument == "go_to_library":
-		print("Berpindah ke castle -> buat ke library")
+		
+	elif argument == "DONE":
+		print("Game selesai! Pindah ke ending scene")
 		Dialogic.clear()
-		Global.current_scene_path = "res://scenes/game_objects/books.tscn"
-		#simpan scene sekarang ke slot save aktif dialogic
+		Global.current_scene_path = "res://scenes/menu/ending.tscn"
 		Dialogic.Save.save_file("default", "current_scene.txt", Global.current_scene_path)
 		get_tree().change_scene_to_file(Global.current_scene_path)
 

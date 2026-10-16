@@ -27,15 +27,8 @@ Lily: I-It's... Mother, I...
 join Layla (confuse) center
 Narration: Layla stood there, watching them disappear.
 Narration: She couldn't help but feel guilty.
-Narration: On her way back, Layla stopped by an old woman in the village.
-join Melinda center
-Melinda: Your friend... What's her name?
-Layla: Um... It's Lily.
-Melinda: Hoho. What a beautiful girl.
-Melinda: She reminds me of that golden-haired girl i met
-Melinda: They both have such long hair...
-Layla: What do you mean, Auntie?
-Layla: There is no golden-haired girl in Pilum.
-Melinda: Long ago...
+Narration: But then Lily peek a glance to her
+[background fade="0.0"]
+Lily: Let's play again tomorrow!
+[signal arg="DONE"]
 [clear time="1.0"]
-jump timeline11/

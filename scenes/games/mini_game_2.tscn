@@ -100,11 +100,11 @@ texture = ExtResource("5_2ql78")
 position = Vector2(-1.2824936, -71.21662)
 
 [node name="SisaPeluruLabel" type="Label" parent="CanvasLayer" unique_id=944728117]
-offset_left = 47.0
-offset_top = 107.0
-offset_right = 146.0
-offset_bottom = 130.0
-text = "SISA PELURU"
+offset_left = 33.0
+offset_top = 99.0
+offset_right = 132.0
+offset_bottom = 122.0
+text = "Bullets :"
 
 [node name="StatusLabel" type="Label" parent="CanvasLayer" unique_id=362461152]
 anchors_preset = 14
@@ -125,6 +125,13 @@ offset_left = -46.0
 offset_top = -12.0
 offset_right = -885.0
 offset_bottom = -545.0
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=445683286]
+offset_left = 32.0
+offset_top = 130.0
+offset_right = 174.0
+offset_bottom = 153.0
+text = "Pressed S to shoot"
 
 [node name="Peluru" parent="." unique_id=861090994 instance=ExtResource("7_2ql78")]
 visible = false

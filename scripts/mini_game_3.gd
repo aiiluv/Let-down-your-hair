@@ -26,7 +26,7 @@ func _on_hadiah_terambil():
 
 func update_ui():
 	if score_label:
-		score_label.text = "Skor: " + str(skor)
+		score_label.text = "Score: " + str(skor)
 
 func bikin_menang():
 	if status_label:

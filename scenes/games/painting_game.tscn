@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://bb7p3nie4k288" path="res://scripts/kanvas.gd" id="1_guyb3"]
 [ext_resource type="Script" uid="uid://hqia5lqoq5hn" path="res://scripts/painting_game.gd" id="1_y66yc"]
 [ext_resource type="Texture2D" uid="uid://dvmmu8t304w4d" path="res://icon.svg" id="3_hiv8t"]
+[ext_resource type="StyleBox" uid="uid://b8fvhi5uqos7u" path="res://styles/button-style.tres" id="4_b88ks"]
 [ext_resource type="PackedScene" uid="uid://k0d5q247i4k3" path="res://scenes/btn/button_back_tower.tscn" id="4_rj5gk"]
 
 [node name="paintingGame" type="Node2D" unique_id=311082332]
@@ -24,15 +25,19 @@ script = ExtResource("1_guyb3")
 [node name="CanvasLayer" type="CanvasLayer" parent="CanvasLayer/TextureRect/Kanvas" unique_id=1313640081]
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/TextureRect/Kanvas/CanvasLayer" unique_id=687002871]
-offset_left = 562.0
-offset_top = 488.0
-offset_right = 1122.0
-offset_bottom = 624.0
+offset_left = 565.0
+offset_top = 474.0
+offset_right = 1128.0
+offset_bottom = 610.0
 
 [node name="ButtonClear" type="Button" parent="CanvasLayer/TextureRect/Kanvas/CanvasLayer/HBoxContainer" unique_id=1954334717]
 unique_name_in_owner = true
+custom_minimum_size = Vector2(120, 0)
 layout_mode = 2
-icon = ExtResource("3_hiv8t")
+theme_override_styles/normal = ExtResource("4_b88ks")
+theme_override_styles/pressed = ExtResource("4_b88ks")
+theme_override_styles/hover = ExtResource("4_b88ks")
+text = "Clear"
 
 [node name="SliderUkuran" type="VSlider" parent="CanvasLayer/TextureRect/Kanvas/CanvasLayer/HBoxContainer" unique_id=497459849]
 unique_name_in_owner = true
@@ -44,26 +49,42 @@ value = 5.0
 [node name="ColorPickerButton" type="ColorPickerButton" parent="CanvasLayer/TextureRect/Kanvas/CanvasLayer/HBoxContainer" unique_id=128031523]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_styles/normal = ExtResource("4_b88ks")
+theme_override_styles/pressed = ExtResource("4_b88ks")
+theme_override_styles/hover = ExtResource("4_b88ks")
 icon = ExtResource("3_hiv8t")
 
 [node name="PilihBentuk" type="OptionButton" parent="CanvasLayer/TextureRect/Kanvas/CanvasLayer/HBoxContainer" unique_id=1948554101]
 unique_name_in_owner = true
+custom_minimum_size = Vector2(120, 0)
 layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = ExtResource("4_b88ks")
+theme_override_styles/normal_mirrored = ExtResource("4_b88ks")
+theme_override_styles/pressed = ExtResource("4_b88ks")
+theme_override_styles/pressed_mirrored = ExtResource("4_b88ks")
+theme_override_styles/hover = ExtResource("4_b88ks")
+alignment = 1
 selected = 0
 item_count = 4
-popup/item_0/text = "Kuas"
+popup/item_0/text = "Brush"
 popup/item_0/id = 0
-popup/item_1/text = "Garis"
+popup/item_1/text = "Line"
 popup/item_1/id = 1
-popup/item_2/text = "Kotak"
+popup/item_2/text = "Square"
 popup/item_2/id = 3
-popup/item_3/text = "Lingkaran"
+popup/item_3/text = "Circle"
 popup/item_3/id = 4
 
 [node name="Fill" type="Button" parent="CanvasLayer/TextureRect/Kanvas/CanvasLayer/HBoxContainer" unique_id=1763560290]
 unique_name_in_owner = true
+custom_minimum_size = Vector2(125, 0)
 layout_mode = 2
-icon = ExtResource("3_hiv8t")
+theme_override_styles/normal = ExtResource("4_b88ks")
+theme_override_styles/pressed = ExtResource("4_b88ks")
+theme_override_styles/hover = ExtResource("4_b88ks")
+text = "Fill"
 
 [node name="ButtonBackTower" parent="CanvasLayer" unique_id=1296299237 instance=ExtResource("4_rj5gk")]
 

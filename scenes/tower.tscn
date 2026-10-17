@@ -8,6 +8,7 @@
 [ext_resource type="Script" uid="uid://k6bjlltyrapl" path="res://scripts/Btn_dress_up.gd" id="4_vqps3"]
 [ext_resource type="Script" uid="uid://d1tmj55j67lex" path="res://scripts/btn_window.gd" id="6_qfw7u"]
 [ext_resource type="Script" uid="uid://civimfdft3rd6" path="res://scripts/btn_paint.gd" id="8_p8022"]
+[ext_resource type="Script" uid="uid://b6yr5pp8hmog" path="res://scripts/clue.gd" id="9_qfw7u"]
 
 [node name="tower" type="Node2D" unique_id=1938250569]
 z_index = 30
@@ -60,6 +61,7 @@ flat = true
 script = ExtResource("8_p8022")
 
 [node name="clue" type="ColorRect" parent="CanvasLayer/TextureRect" unique_id=361969867]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 14
 anchor_top = 0.5
@@ -70,6 +72,7 @@ offset_bottom = 78.33331
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(1, 1, 1, 0.2627451)
+script = ExtResource("9_qfw7u")
 
 [node name="Label" type="Label" parent="CanvasLayer/TextureRect/clue" unique_id=1431554352]
 layout_mode = 1

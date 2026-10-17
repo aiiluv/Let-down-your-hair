@@ -1,10 +1,15 @@
+[background arg="res://assets/bg/InsideTower.png" fade="0.0"]
+join Lily center
 Narration: Lily was alone in her room.
 Narration: Her mother had left early that morning.
-Lily: Maybe I should play for a while.
+Lily (nervous): Maybe I should play for a while.
 [signal arg="play_inside_tower"]
 label done_playing
-Lily: The view outside is so beautiful...
-Lily: If only I could go outside with Mother.
+[background arg="res://assets/bg/menuScreen.png" fade="0.0"]
+Lily (happy): The view outside is so beautiful...
+Lily (default): If only I could go outside with Mother.
+[clear time="1.0"]
+[background arg="res://assets/bg/layla shout.png" fade="0.0"]
 Layla: Lily! Hii! Do you still remember me?
 Lily: Layla? Is that you?
 Layla: That's right! You remember me!

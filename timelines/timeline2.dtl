@@ -20,7 +20,7 @@ join Layla (confuse) center
 Narration: Layla suddenly collided with someone.
 Narration: The impact wasn't hard, but both of them stumbled backward.
 [clear time="1.0"]
-[background fade="0.0"]
+[background arg="res://assets/bg/bump.png" fade="0.0"]
 Layla: Oh my goodness!
 Layla: She quickly reached out her hand.
 Narration: The woman looked nervous... almost frightened.
@@ -30,6 +30,7 @@ Narration: Something felt strange.
 Narration: Layla knew almost everyone in Pilum, but she had never seen this woman before.
 join Layla (confuse) center
 Layla: Are you a traveler? I don't think we've met before.
+[background arg="res://assets/bg/shocked.png" fade="0.0"]
 Narration: The mysterious girl suddenly froze.
 Narration: Her eyes widened, as if those simple words had startled her.
 Narration: Without another word, she turned around and ran.

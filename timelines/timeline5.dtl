@@ -1,3 +1,4 @@
+[background arg="res://assets/bg/menuScreen.png" fade="0.0"]
 Narration: Suddenly—
 join Layla (shock) center
 Narration: Crunch. Crunch. Crunch.
@@ -9,13 +10,16 @@ Narration: Without thinking, she hid behind a nearby tree.
 join Layla (confuse) center
 Layla: W-Wait! Why am I hiding in the first place?!
 Narration: The person running toward the tower was the mysterious woman.
-Narration: The same girl Layla had chased from the marketplace.
+Narration: The same woman Layla had chased from the marketplace.
+[clear time="1.0"]
+[background arg="res://assets/bg/shout.png" fade="0.0"]
 "Lily's mother": Lily, dear! Let down your hair!
 Narration: A long chestnut-brown braid spilled from the window.
 Narration: It cascaded down the tower like a waterfall of silk.
+[background arg="res://assets/bg/menuScreen.png" fade="0.0"]
 join Layla (shock) center
 Narration: Layla's eyes widened in disbelief.
-Narration: Without hesitation, the girl grabbed the braid.
+Narration: Without hesitation, the woman grabbed the braid.
 Narration: She began climbing upward, using the hair like a rope.
 Narration: Until she disappeared through the window.
 jump timeline6/

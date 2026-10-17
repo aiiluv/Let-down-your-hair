@@ -7,13 +7,13 @@ func _on_to_tower_pressed() -> void:
 	Global.lanjut_ke_timeline_7 = true
 	get_tree().change_scene_to_file("res://scenes/menu/main.tscn")
 
-func _on_to_market_pressed() -> void:
+func _on_to_river_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/games/Map places/river.tscn")
+
+func _on_torestricted_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/games/Map places/block_maze.tscn")
+
+func _on_to_fest_pressed() -> void:
 	%locked.visible = true
 	await get_tree().create_timer(2.0).timeout
 	%locked.visible = false
-	
-func _on_to_forest_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/games/Map places/forest.tscn")
-
-func _on_to_river_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/games/Map places/river.tscn")

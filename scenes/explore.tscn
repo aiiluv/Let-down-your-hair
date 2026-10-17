@@ -32,7 +32,7 @@ offset_bottom = 258.0
 theme_override_font_sizes/font_size = 20
 text = "Go to Tower"
 
-[node name="ToMarket" type="Button" parent="CanvasLayer/TextureRect" unique_id=1207343927]
+[node name="Torestricted" type="Button" parent="CanvasLayer/TextureRect" unique_id=1207343927]
 layout_mode = 0
 offset_left = 189.0
 offset_top = 491.0
@@ -41,7 +41,7 @@ offset_bottom = 529.0
 theme_override_font_sizes/font_size = 20
 text = "Go to restricted area"
 
-[node name="ToForest" type="Button" parent="CanvasLayer/TextureRect" unique_id=1696568762]
+[node name="ToFest" type="Button" parent="CanvasLayer/TextureRect" unique_id=1696568762]
 layout_mode = 0
 offset_left = 211.0
 offset_top = 155.0
@@ -57,7 +57,7 @@ offset_top = 493.0
 offset_right = 958.0
 offset_bottom = 540.0
 theme_override_font_sizes/font_size = 20
-text = "Go to Rver"
+text = "Go to River"
 
 [node name="locked" type="ColorRect" parent="CanvasLayer/TextureRect" unique_id=1626386338]
 unique_name_in_owner = true
@@ -90,6 +90,6 @@ horizontal_alignment = 1
 [node name="ButtonBackCastle" parent="CanvasLayer" unique_id=1296299237 instance=ExtResource("1_x7d0j")]
 
 [connection signal="pressed" from="CanvasLayer/TextureRect/ToTower" to="." method="_on_to_tower_pressed"]
-[connection signal="pressed" from="CanvasLayer/TextureRect/ToMarket" to="." method="_on_to_market_pressed"]
-[connection signal="pressed" from="CanvasLayer/TextureRect/ToForest" to="." method="_on_to_forest_pressed"]
+[connection signal="pressed" from="CanvasLayer/TextureRect/Torestricted" to="." method="_on_torestricted_pressed"]
+[connection signal="pressed" from="CanvasLayer/TextureRect/ToFest" to="." method="_on_to_fest_pressed"]
 [connection signal="pressed" from="CanvasLayer/TextureRect/ToRiver" to="." method="_on_to_river_pressed"]

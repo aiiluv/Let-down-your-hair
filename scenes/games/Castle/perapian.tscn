@@ -1,9 +1,12 @@
 [gd_scene format=3 uid="uid://ddrf5olkb448f"]
 
 [ext_resource type="PackedScene" uid="uid://cmbr5esabvhgw" path="res://scenes/btn/btn_back_room.tscn" id="1_1yo7a"]
-[ext_resource type="Script" uid="uid://cec5wvjev1jr8" path="res://scripts/btn_back_room.gd" id="2_6llwe"]
+[ext_resource type="Texture2D" uid="uid://cybpdgrhjd4kv" path="res://assets/bg/InsideCastle.png" id="1_6llwe"]
+[ext_resource type="Script" uid="uid://cgnuhvm5xbm6c" path="res://scripts/woodkeeper.gd" id="1_pflsy"]
+[ext_resource type="Texture2D" uid="uid://b6kli46gmgn8e" path="res://assets/item/fireplace.png" id="3_pflsy"]
 
 [node name="Perapian" type="Node2D" unique_id=922371690]
+script = ExtResource("1_pflsy")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2075280049]
 
@@ -13,8 +16,57 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("1_6llwe")
 
 [node name="BtnBackRoom" parent="CanvasLayer" unique_id=1384816665 instance=ExtResource("1_1yo7a")]
-script = ExtResource("2_6llwe")
 
-[connection signal="pressed" from="CanvasLayer/BtnBackRoom" to="CanvasLayer/BtnBackRoom" method="_on_pressed"]
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer" unique_id=1155100098]
+position = Vector2(575, 94)
+texture = ExtResource("3_pflsy")
+
+[node name="BtnNormalWood" type="Button" parent="CanvasLayer" unique_id=843536344]
+offset_left = 875.0
+offset_top = 396.0
+offset_right = 1031.0
+offset_bottom = 443.0
+text = "BtnNormalWood
+"
+
+[node name="BtnDryWood" type="Button" parent="CanvasLayer" unique_id=729938570]
+offset_left = 875.0
+offset_top = 452.0
+offset_right = 1031.0
+offset_bottom = 499.0
+text = "BtnDryWood
+"
+
+[node name="BtnWetWood" type="Button" parent="CanvasLayer" unique_id=896735225]
+offset_left = 875.0
+offset_top = 505.0
+offset_right = 1031.0
+offset_bottom = 552.0
+text = "BtnWetWood
+"
+
+[node name="LabelScore" type="Label" parent="CanvasLayer" unique_id=1084632919]
+unique_name_in_owner = true
+offset_left = 52.0
+offset_top = 177.0
+offset_right = 92.0
+offset_bottom = 200.0
+
+[node name="FireTimer" type="Timer" parent="CanvasLayer" unique_id=1299654526]
+unique_name_in_owner = true
+autostart = true
+
+[node name="FireBar" type="ProgressBar" parent="CanvasLayer" unique_id=954781157]
+unique_name_in_owner = true
+offset_left = 66.0
+offset_top = 129.0
+offset_right = 70.0
+offset_bottom = 156.0
+
+[connection signal="pressed" from="CanvasLayer/BtnNormalWood" to="." method="_on_btn_normal_wood_pressed"]
+[connection signal="pressed" from="CanvasLayer/BtnDryWood" to="." method="_on_btn_dry_wood_pressed"]
+[connection signal="pressed" from="CanvasLayer/BtnWetWood" to="." method="_on_btn_wet_wood_pressed"]
+[connection signal="timeout" from="CanvasLayer/FireTimer" to="." method="_on_fire_timer_timeout"]

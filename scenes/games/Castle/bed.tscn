@@ -1,7 +1,15 @@
 [gd_scene format=3 uid="uid://dg8van4avokrr"]
 
 [ext_resource type="PackedScene" uid="uid://cmbr5esabvhgw" path="res://scenes/btn/btn_back_room.tscn" id="1_3y8bu"]
-[ext_resource type="Script" uid="uid://cec5wvjev1jr8" path="res://scripts/btn_back_room.gd" id="2_0wm3n"]
+[ext_resource type="Texture2D" uid="uid://cybpdgrhjd4kv" path="res://assets/bg/InsideCastle.png" id="1_i7lkh"]
+[ext_resource type="Texture2D" uid="uid://b673ewpbqifkh" path="res://assets/item/bed_jump.png" id="3_vump4"]
+[ext_resource type="PackedScene" uid="uid://ds7anct6lr2o7" path="res://scenes/games/Castle/bed_player.tscn" id="4_x7sbs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vump4"]
+size = Vector2(1159, 166)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7feg7"]
+size = Vector2(760, 64)
 
 [node name="Bed" type="Node2D" unique_id=1199172868]
 
@@ -13,8 +21,33 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("1_i7lkh")
 
 [node name="BtnBackRoom" parent="CanvasLayer" unique_id=1384816665 instance=ExtResource("1_3y8bu")]
-script = ExtResource("2_0wm3n")
 
-[connection signal="pressed" from="CanvasLayer/BtnBackRoom" to="CanvasLayer/BtnBackRoom" method="_on_pressed"]
+[node name="GameOverArea" type="Area2D" parent="CanvasLayer" unique_id=469569993]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/GameOverArea" unique_id=732761478]
+position = Vector2(574.5, 570)
+shape = SubResource("RectangleShape2D_vump4")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="CanvasLayer" unique_id=591600996]
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/StaticBody2D" unique_id=635546976]
+position = Vector2(584, 413.00003)
+scale = Vector2(1.0497794, 0.78320533)
+texture = ExtResource("3_vump4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/StaticBody2D" unique_id=881165853]
+position = Vector2(580, 445)
+shape = SubResource("RectangleShape2D_7feg7")
+
+[node name="BedPlayer" parent="CanvasLayer" unique_id=382112826 instance=ExtResource("4_x7sbs")]
+unique_name_in_owner = true
+position = Vector2(557, 342)
+scale = Vector2(0.4, 0.4)
+
+[node name="Camera2D" type="Camera2D" parent="CanvasLayer/BedPlayer" unique_id=31216704]
+position = Vector2(42.5, -30)
+
+[connection signal="body_entered" from="CanvasLayer/GameOverArea" to="CanvasLayer/BedPlayer" method="_on_game_over_area_body_entered"]

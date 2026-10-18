@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://ds7anct6lr2o7"]
+
+[ext_resource type="Texture2D" uid="uid://blwqde7j734wr" path="res://assets/chara/layla oc/layla so happy.png" id="1_nsg8j"]
+[ext_resource type="Script" uid="uid://duw0lkobuidkl" path="res://scripts/bed_player.gd" id="1_yawef"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yawef"]
+radius = 48.0
+height = 311.0
+
+[node name="BedPlayer" type="CharacterBody2D" unique_id=382112826]
+script = ExtResource("1_yawef")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2088081568]
+unique_name_in_owner = true
+scale = Vector2(0.48791543, 0.48791546)
+texture = ExtResource("1_nsg8j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=667836102]
+shape = SubResource("CapsuleShape2D_yawef")

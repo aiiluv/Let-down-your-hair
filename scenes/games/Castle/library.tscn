@@ -1,7 +1,17 @@
 [gd_scene format=3 uid="uid://c60xua1vwlthg"]
 
 [ext_resource type="PackedScene" uid="uid://cmbr5esabvhgw" path="res://scenes/btn/btn_back_room.tscn" id="1_tteif"]
-[ext_resource type="Script" uid="uid://cec5wvjev1jr8" path="res://scripts/btn_back_room.gd" id="2_vu086"]
+[ext_resource type="Texture2D" uid="uid://djubhafppb0ht" path="res://assets/bg/library.png" id="1_vu086"]
+[ext_resource type="Texture2D" uid="uid://ink12hqnmln1" path="res://assets/chara/layla oc/Layla normal.png" id="3_vu086"]
+[ext_resource type="Texture2D" uid="uid://d34yoxxkpqt4u" path="res://assets/chara/queenStarla.png" id="4_d41i8"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_d41i8"]
+radius = 82.0
+height = 636.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g6xno"]
+radius = 114.0
+height = 872.0
 
 [node name="Library" type="Node2D" unique_id=1393672657]
 
@@ -11,10 +21,42 @@
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = -2.0
+offset_right = 1137.0
+offset_bottom = 640.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_vu086")
 
 [node name="BtnBackRoom" parent="CanvasLayer" unique_id=1384816665 instance=ExtResource("1_tteif")]
-script = ExtResource("2_vu086")
 
-[connection signal="pressed" from="CanvasLayer/BtnBackRoom" to="CanvasLayer/BtnBackRoom" method="_on_pressed"]
+[node name="player" type="CharacterBody2D" parent="CanvasLayer" unique_id=590613174]
+position = Vector2(573, 444)
+scale = Vector2(0.5, 0.5)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/player" unique_id=1337122333]
+texture = ExtResource("3_vu086")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/player" unique_id=1155983887]
+shape = SubResource("CapsuleShape2D_d41i8")
+
+[node name="queen" type="CharacterBody2D" parent="CanvasLayer" unique_id=817171534]
+position = Vector2(896, 378)
+scale = Vector2(0.5, 0.5)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/queen" unique_id=1595410248]
+texture = ExtResource("4_d41i8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/queen" unique_id=1066019334]
+position = Vector2(-2, 30)
+shape = SubResource("CapsuleShape2D_g6xno")
+
+[node name="NoiseBar" type="ProgressBar" parent="CanvasLayer" unique_id=432673545]
+offset_right = 4.0
+offset_bottom = 27.0
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=2008644950]
+offset_right = 40.0
+offset_bottom = 23.0

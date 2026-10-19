@@ -4,7 +4,9 @@ func _ready() -> void:
 	%locked.visible = false
 
 func _on_books_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/games/Castle/library.tscn")
+	%locked.visible = true
+	await get_tree().create_timer(2.0).timeout
+	%locked.visible = false
 
 func _on_explore_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/explore.tscn")

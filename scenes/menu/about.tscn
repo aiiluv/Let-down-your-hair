@@ -25,24 +25,12 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_jvtft")
 
-[node name="CharInfoBtn" type="Button" parent="CanvasLayer/TextureRect" unique_id=1560495941]
-layout_mode = 1
-offset_left = 338.0
-offset_top = 353.0
-offset_right = 529.0
-offset_bottom = 443.0
-theme_override_font_sizes/font_size = 24
-theme_override_styles/normal = ExtResource("2_stq1d")
-theme_override_styles/pressed = ExtResource("3_1408j")
-theme_override_styles/hover = ExtResource("3_1408j")
-text = "Chara info"
-
 [node name="StoryBtn" type="Button" parent="CanvasLayer/TextureRect" unique_id=2117113540]
 layout_mode = 1
 offset_left = 338.0
-offset_top = 461.0
+offset_top = 325.0
 offset_right = 529.0
-offset_bottom = 551.0
+offset_bottom = 415.0
 theme_override_font_sizes/font_size = 24
 theme_override_styles/normal = ExtResource("2_stq1d")
 theme_override_styles/pressed = ExtResource("3_1408j")
@@ -52,9 +40,9 @@ text = "Story"
 [node name="CreditBtn" type="Button" parent="CanvasLayer/TextureRect" unique_id=1886986185]
 layout_mode = 1
 offset_left = 338.0
-offset_top = 578.0
+offset_top = 442.0
 offset_right = 529.0
-offset_bottom = 668.0
+offset_bottom = 532.0
 theme_override_font_sizes/font_size = 24
 theme_override_styles/normal = ExtResource("2_stq1d")
 theme_override_styles/pressed = ExtResource("3_1408j")
@@ -96,20 +84,6 @@ raising her little one beneath
 its ancient walls, 
 far from the world beyond."
 
-[node name="ScrollCharInfo" type="ScrollContainer" parent="CanvasLayer/TextureRect/ColorRect" unique_id=62228283]
-unique_name_in_owner = true
-visible = false
-layout_mode = 0
-offset_left = 43.0
-offset_top = 31.0
-offset_right = 775.0
-offset_bottom = 491.0
-
-[node name="LabelCharInfo" type="Label" parent="CanvasLayer/TextureRect/ColorRect/ScrollCharInfo" unique_id=1729018704]
-layout_mode = 2
-theme_override_font_sizes/font_size = 34
-text = "Characters Info"
-
 [node name="ScrollCredit" type="ScrollContainer" parent="CanvasLayer/TextureRect/ColorRect" unique_id=2025207525]
 unique_name_in_owner = true
 layout_mode = 0
@@ -130,6 +104,5 @@ BGM : Pixabay (Alex Morgan)"
 offset_left = -30.0
 offset_right = -869.0
 
-[connection signal="pressed" from="CanvasLayer/TextureRect/CharInfoBtn" to="." method="_on_char_info_btn_pressed"]
 [connection signal="pressed" from="CanvasLayer/TextureRect/StoryBtn" to="." method="_on_story_btn_pressed"]
 [connection signal="pressed" from="CanvasLayer/TextureRect/CreditBtn" to="." method="_on_credit_btn_pressed"]

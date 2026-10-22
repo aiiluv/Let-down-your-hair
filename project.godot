@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 Dialogic="*uid://ds2q0uclmolvu"
 SaveLoad="*uid://k67pb5pvo07o"
 Global="*uid://dp5qpn0yrisaa"
+BgMusic="*uid://dfuf7i7rc0w0b"
 
 [dialogic]
 

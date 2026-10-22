@@ -5,8 +5,6 @@
 
 *A visual novel about a little princess named Layla and her shy friend who live in a tower.*
 
-[Play the Game](https://irineesan.itch.io/let-down-your-hair)
-
 </div>
 
 ---

@@ -4,6 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://cybpdgrhjd4kv" path="res://assets/bg/InsideCastle.png" id="1_6llwe"]
 [ext_resource type="Script" uid="uid://cgnuhvm5xbm6c" path="res://scripts/woodkeeper.gd" id="1_pflsy"]
 [ext_resource type="Texture2D" uid="uid://b6kli46gmgn8e" path="res://assets/item/fireplace.png" id="3_pflsy"]
+[ext_resource type="StyleBox" uid="uid://b8fvhi5uqos7u" path="res://styles/button-style.tres" id="5_20og7"]
+[ext_resource type="StyleBox" uid="uid://bm3l17skvf60i" path="res://styles/button-hover-style.tres" id="6_gy5wj"]
 
 [node name="Perapian" type="Node2D" unique_id=922371690]
 script = ExtResource("1_pflsy")
@@ -29,6 +31,9 @@ offset_left = 875.0
 offset_top = 396.0
 offset_right = 1031.0
 offset_bottom = 443.0
+theme_override_styles/normal = ExtResource("5_20og7")
+theme_override_styles/pressed = ExtResource("6_gy5wj")
+theme_override_styles/hover = ExtResource("6_gy5wj")
 text = "BtnNormalWood
 "
 
@@ -37,6 +42,9 @@ offset_left = 875.0
 offset_top = 452.0
 offset_right = 1031.0
 offset_bottom = 499.0
+theme_override_styles/normal = ExtResource("5_20og7")
+theme_override_styles/pressed = ExtResource("6_gy5wj")
+theme_override_styles/hover = ExtResource("6_gy5wj")
 text = "BtnDryWood
 "
 
@@ -45,6 +53,9 @@ offset_left = 875.0
 offset_top = 505.0
 offset_right = 1031.0
 offset_bottom = 552.0
+theme_override_styles/normal = ExtResource("5_20og7")
+theme_override_styles/pressed = ExtResource("6_gy5wj")
+theme_override_styles/hover = ExtResource("6_gy5wj")
 text = "BtnWetWood
 "
 

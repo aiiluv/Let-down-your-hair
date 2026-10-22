@@ -5,7 +5,7 @@
 
 *A visual novel about a little princess named Layla and her shy friend who live in a tower.*
 
-<img src="" width="700" alt="Game Banner">
+<img src="assets/bg/festivalPlay.png.import" width="700" alt="Game Banner">
 
 [Play the Game](https://irineesan.itch.io/let-down-your-hair)
 

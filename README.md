@@ -34,6 +34,6 @@ In this alternate universe, Rapunzel never escapes her secluded tower, raising h
 
 - **Developer:** Airin Azaria
 - **Engine / Tools:** Godot & Figma
-- ** BGM:** Pixabay (Alex morgan)
+- **BGM:** Pixabay (Alex morgan)
 
 </div>

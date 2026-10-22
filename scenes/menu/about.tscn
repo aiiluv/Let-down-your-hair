@@ -81,36 +81,20 @@ offset_bottom = 491.0
 [node name="LabelStory" type="Label" parent="CanvasLayer/TextureRect/ColorRect/ScrollStory" unique_id=1757054245]
 layout_mode = 2
 theme_override_font_sizes/font_size = 34
-text = "The Untold Story
+text = "Layla, the princess of the Moon Kingdom, 
+stumbles upon a forgotten tower.
 
-Long ago, two legendary flowers 
-were said to exist.
+Hidden deep within an enchanted forest, 
+where an ethereal maiden 
+with hair spun from golden sunlight 
+lives in solitude with her child. 
 
-The Sun Flower was said to possess 
-a power beyond imagination. 
-Its story has been told for generations.
-
-But what about the other flower?
-The Moon Flower...
-
-Its story was never told.
-What happened to it?
-Where did it go?
-
-And why was its existence erased 
-from history? Years later, news spread 
-that the \"Sun Flower\" had returned.
-
-The kingdom that possessed it 
-became the center of attention once again.
-
-But before anyone could learn 
-the truth behind the flower...
-
-War broke out. The kingdom fell.
-And the story of the Sun Flower 
-was rewritten forever.
-"
+In this alternate universe, 
+Rapunzel never escapes 
+her secluded tower, 
+raising her little one beneath 
+its ancient walls, 
+far from the world beyond."
 
 [node name="ScrollCharInfo" type="ScrollContainer" parent="CanvasLayer/TextureRect/ColorRect" unique_id=62228283]
 unique_name_in_owner = true
@@ -140,7 +124,7 @@ theme_override_font_sizes/font_size = 34
 text = "Credit
 
 Story & Design : Me
-BGM : "
+BGM : Pixabay (Alex Morgan)"
 
 [node name="ButtonBack" parent="CanvasLayer" unique_id=1296299237 instance=ExtResource("1_4baay")]
 offset_left = -30.0

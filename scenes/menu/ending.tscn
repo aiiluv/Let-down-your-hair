@@ -15,16 +15,23 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_0356c")
 
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1920110079]
+offset_left = 733.0
+offset_top = 493.0
+offset_right = 1154.0
+offset_bottom = 600.0
+color = Color(0.79731697, 0.57194966, 0.2668928, 0.38431373)
+
 [node name="Label" type="Label" parent="CanvasLayer" unique_id=949970189]
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = 130.0
-offset_top = 475.0
-offset_right = 516.0
-offset_bottom = 612.0
+offset_left = 171.0
+offset_top = 479.0
+offset_right = 557.0
+offset_bottom = 616.0
 grow_horizontal = 2
-theme_override_colors/font_color = Color(0.15927762, 0.07612149, 0.020225313, 1)
+theme_override_colors/font_color = Color(0.2924234, 0.15397671, 0.059008665, 1)
 theme_override_font_sizes/font_size = 100
 text = "The End"
 

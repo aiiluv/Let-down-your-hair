@@ -27,12 +27,6 @@ grow_vertical = 2
 mouse_filter = 2
 texture = ExtResource("2_6fbvt")
 
-[node name="ScoreLabel" type="Label" parent="CanvasLayer" unique_id=572037014]
-offset_left = 48.0
-offset_top = 90.0
-offset_right = 169.0
-offset_bottom = 134.0
-
 [node name="StatusLabel" type="Label" parent="CanvasLayer" unique_id=199383243]
 offset_right = 40.0
 offset_bottom = 23.0

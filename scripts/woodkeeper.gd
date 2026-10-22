@@ -28,7 +28,7 @@ func _process(delta: float) -> void:
 	if fire_bar:
 		fire_bar.value = current_fire
 	if label_score:
-		label_score.text = "Waktu bertahan: " + str(score_timer) + " detik"
+		label_score.text = "Survival time: " + str(score_timer) + " seconds"
 	
 	#cek kondisi kalah
 	if current_fire <= min_fire:

@@ -5,8 +5,6 @@
 
 *A visual novel about a little princess named Layla and her shy friend who live in a tower.*
 
-<img src="assets/bg/festivalPlay.png.import" width="700" alt="Game Banner">
-
 [Play the Game](https://irineesan.itch.io/let-down-your-hair)
 
 </div>
@@ -26,13 +24,6 @@ In this alternate universe, Rapunzel never escapes her secluded tower, raising h
 - **New Original Characters** — Discover the story through the eyes of new characters.
 - **A Cozy, Relaxing Experience** — Take your time and enjoy the story at your own pace.
 - **Adorable Characters** — Meet charming, lovable characters.
-
-## Screenshots
-
-<div align="center">
-  <img src="" width="400" alt="">
-  <img src="" width="400" alt="">
-</div>
 
 ## How to Play
 

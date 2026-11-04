@@ -1,7 +1,6 @@
 # Let down your hair, please!
 
 *A visual novel about a little princess named Layla and her shy friend who live in a tower.*
----
 
 ## About the Game
 
@@ -10,11 +9,11 @@ In this alternate universe, Rapunzel never escapes her secluded tower, raising h
 
 ## Key Features
 
-- **Rapunzel Alternate Universe** — A world where she never leaves her tower, but with different pov
-- **A Variety of Minigames** — Lots of minigames to play.
-- **New Original Characters** — Discover the story through the eyes of new characters.
-- **A Cozy, Relaxing Experience** — Take your time and enjoy the story at your own pace.
-- **Adorable Characters** — Meet charming, lovable characters.
+- **Rapunzel Alternate Universe**
+- **A Variety of Minigames**
+- **New Original Characters**
+- **A Cozy, Relaxing Experience**
+- **Adorable Characters**
 
 ## How to Play
 

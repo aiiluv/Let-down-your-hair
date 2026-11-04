@@ -4,7 +4,7 @@
 
 ## About the Game
 
-Layla, the princess of the Moon Kingdom, found a forgotten tower hidden deep within forest, where lives a girl same age as her with a long hair.
+In this game, you play as Layla, the princess of the Moon Kingdom, who found a forgotten tower. where she found a girl same age as her with incredibly long hair.
 In this alternate universe, Rapunzel never escapes her secluded tower, raising her little one beneath its ancient walls, far from the world beyond.
 
 ## Key Features

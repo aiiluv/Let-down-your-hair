@@ -17,8 +17,8 @@ In this alternate universe, Rapunzel never escapes her secluded tower, raising h
 
 ## How to Play
 
-- Follow the story and explore the world.
-- Play minigames along the way.
+- Just follow the story until the end.
+- You can also play minigames!
 
 ! please don't play in fullscreen mode I'll try to fix this in the next update !
 
